@@ -1,0 +1,14 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.banner {
+    width: 100%;
+    max-width: 1240px;
+    max-height: 225px;
+    border-radius: 25px;
+    filter: brightness(70%);
+    
+    
+}

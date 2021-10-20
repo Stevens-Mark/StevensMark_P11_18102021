@@ -1,0 +1,29 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    max-width: 1240px;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 70px;
+
+}
+
+/* .logo {
+  width: 210px;
+  height: 68px;
+} */
+
+/* Navigation*/
+nav ul {
+    display: flex;
+    list-style-type: none; 
+    padding-left: 0rem;
+  }
+
+  .navlink {
+    text-decoration: none;
+    padding-left: 20px;
+    cursor: pointer;  
+  }
+
