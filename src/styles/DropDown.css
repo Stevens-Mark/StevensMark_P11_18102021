@@ -1,0 +1,28 @@
+.accordion {
+    margin-top: 31px;
+    background: #FF6060;
+    height: 47px;
+    max-width: 1023px;
+    border-radius: 5px;
+}
+
+.accordion_title{
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+    font-weight: 500;
+    padding: 7px;
+}
+.accordion_content  {
+     position: relative;
+    z-index: -1;
+     background: #F6F6F6;
+     color: #FF6060;
+     font-size: clamp(0.75rem, 1.6vw, 1.5rem);
+     font-weight: 400;
+     padding: 7px;
+     height: 146px;
+    border-radius: 5px;
+    padding-top: 25px;
+
+}
