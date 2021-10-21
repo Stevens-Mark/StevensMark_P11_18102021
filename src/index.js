@@ -5,6 +5,7 @@ import './index.css'
 // import App from './App';
 import reportWebVitals from './reportWebVitals'
 import Header from './components/Header'
+import Footer from './components/Footer'
 import Home from './pages/Home'
 import About from './pages/About'
 import Error from './pages/Error'
@@ -12,7 +13,7 @@ import Error from './pages/Error'
 ReactDOM.render(
   <React.StrictMode>
     <Router>
-      <Header />
+      <Header />   
         <Switch>
             <Route exact path="/">
               <Home />
@@ -24,6 +25,7 @@ ReactDOM.render(
               <Error />
             </Route>
         </Switch> 
+      <Footer />
     </Router>       
   </React.StrictMode>,
   document.getElementById('root')

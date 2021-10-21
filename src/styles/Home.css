@@ -1,14 +1,24 @@
 .wrapper {
     display: flex;
     justify-content: center;
+    /* background-image: url("../assets/homeBanner.jpg"); */
+    align-items: center;
 }
 
 .banner {
     width: 100%;
     max-width: 1240px;
-    max-height: 225px;
-    border-radius: 25px;
-    filter: brightness(70%);
-    
-    
+    max-height: 223px;
+    min-height: 111px;
+    border-radius: 1.736vw;    ;
+    filter: brightness(70%);    
+}
+
+.slogan {
+    color: white;
+    position: absolute;
+    /* font-size: 4.688vw; */
+    font-size: clamp(24px, 4vw, 48px);
+    /* font-size:calc(24px + 1.5vw);     */
+    font-weight: 500;
 }
