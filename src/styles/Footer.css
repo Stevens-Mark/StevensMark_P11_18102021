@@ -5,7 +5,8 @@
     align-items: center;
     max-width: 1440px;
     height: 13.063rem;
-    margin: auto;
+    margin-top: 6rem;
+    /* margin: auto; */
     background: #000000;
 }
 

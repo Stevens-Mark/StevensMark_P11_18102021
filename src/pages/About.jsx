@@ -16,7 +16,7 @@ export default class About extends Component {
               {/* <h1 className='slogan'> {values}</h1> */}
           </div>     
             {aboutData.map((data) => (
-            <DropDown id={data.id} title={data.title} content={data.content}/>
+            <DropDown key={data.id} title={data.title} content={data.content}/>
             ))}   
       </div>
       </main>

@@ -16,18 +16,17 @@ export default class DropDown extends Component {
     const { open } = this.state
     const {id, title, content} = this.props
     return (
-        
-            <div key={id} className="dropDown" onClick={this.handleButtonClick}>
-                {title}
-                     <div>{open ? <img src={upArrow} alt="icon" /> : <img src={downArrow} alt="icon" />}</div>
-                {open && (
-                    <div className="dropdownList">
-                        <ul>
-                            <li>{content}</li>
-                        </ul>
-                    </div>
-                )}
-            </div>   
+        <div className='dropDown'>
+            <div className="dropDownTitle" onClick={this.handleButtonClick}>
+                <span>{title}</span>
+                <span>{open ? (<img src={upArrow} alt="icon" />) : 
+                    (<img src={downArrow} alt="icon" />)} </span>
+            </div>
+
+            {open && (
+            <p key={id} className="dropDownList">{content}</p>)}
+        </div>
     )
   }
 }
+
