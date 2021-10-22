@@ -1,0 +1,19 @@
+.coverImage {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    
+}
+
+.coverTitle {
+    color: black;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    /* text-align: left; */
+    position: relative;
+
+}
+
