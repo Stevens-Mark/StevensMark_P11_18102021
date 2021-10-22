@@ -30,7 +30,7 @@ nav ul {
   font-weight: 500;
   color: #FF6060;
   /* font-size:calc(12px + 1.5vw); */
-  font-size: clamp(0.75rem, 2vw, 1.5rem);
+  font-size: clamp(0.75rem, 2vw, 2rem);
 }
 
 a:hover {
