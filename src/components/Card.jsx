@@ -7,11 +7,9 @@ export default class Card extends Component {
 
     const {id, title, cover} = this.props
     return (
-        <article key={id}>
-            <div >
-                <img className='coverImage' src={cover} alt=''/>
-                <h2 className='coverTitle'>{title}</h2>
-            </div>
+        <article className='accomodationCard' key={id}>
+          <img className='coverImage' src={cover} alt=''/>
+          <h2 className='coverTitle'>{title}</h2>
         </article>
     )
   }

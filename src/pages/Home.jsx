@@ -9,13 +9,17 @@ export default class Home extends Component {
   render() { 
     return (
       <main>
-        <div className='homeBanner'>
-            <Banner image={homeBanner} alternate='Rocks by the sea coastline'/>
-            <h1 className='slogan'>Chez vous, partout et ailleurs</h1>
+        <div className='homeWrapper'>
+            <span className='homeBanner'>
+              <Banner image={homeBanner} alternate='Rocks by the sea coastline'/>
+              <h1 className='slogan'>Chez vous, partout et ailleurs</h1>    
+            </span>  
+          <div className='accomodationContainer'>
+              {accomodationData.map((data) => (
+              <Card key={data.id} title={data.title} cover={data.cover}/>
+              ))}   
+          </div>
         </div>
-            {accomodationData.map((data) => (
-            <Card key={data.id} title={data.title} cover={data.cover}/>
-            ))}   
       </main>
     )
   }
