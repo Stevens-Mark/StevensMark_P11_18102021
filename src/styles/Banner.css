@@ -4,7 +4,7 @@
     max-width: 1240px;
     max-height: 13.938rem;
     min-height: 6.938rem; 
-    border-radius: 1.736vw;    
+    border-radius: clamp(0.625rem, 1.736vw, 1.563rem);
     filter: brightness(70%); 
     object-fit: cover;  
 }

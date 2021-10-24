@@ -1,31 +1,51 @@
+
 .accomodationCard {
-    height: 340px;
-    width: 340px; 
-    margin: 20px;
+    border-radius: 0.625rem;
+    height: 255px;
+    margin: 1.25rem 0rem;
+    flex: 1 1 355px;
 }
+
+.accomodationCard:hover{
+    opacity: 0.85;
+    filter: brightness(100%);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .8);
+}
+
 .coverImage {
+    filter: brightness(95%);
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 0.625rem;
     height: 100%;
     width: 100%; 
+    opacity: 1;
 }
+
 
 .coverTitle {
     color: #fff;
     font-family: Montserrat;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-style: normal;
     font-weight: 500;
     position: relative;
-    bottom: 65px;
-    margin: 10px;
+    bottom: 4rem;
+    margin: 0.625rem;
 }
 
-@media screen and (max-width: 425px) {
- 
+@media screen and (min-width: 670px) {
     .accomodationCard {
-        max-height: 255px;
-        min-width: 335px;
+        height: 275px;
+        margin: 1.25rem;
+        flex: 1 1 275px;
+        /* max-width: 275px; */
     }
+  } 
 
-  }
+@media screen and (min-width: 1150px) {
+  .accomodationCard {
+    height: 340px;
+    flex: 1 1 340px;
+    /* max-width: 340px; */
+    }
+}

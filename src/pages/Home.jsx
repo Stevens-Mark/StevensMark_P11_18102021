@@ -1,5 +1,5 @@
 import { Component } from "react"
-import { Link} from 'react-router-dom'
+
 import Banner from '../components/Banner'
 import homeBanner from '../assets/homeBanner.jpg'
 import accomodationData from '../data/logements.json'
@@ -16,12 +16,9 @@ export default class Home extends Component {
               <h1 className='slogan'>Chez vous, partout et ailleurs</h1>    
             </span>  
           <div className='accomodationContainer'>
-              {accomodationData.map((data) => (
-                <Link key={`accomodation-${data.id}`} to={`/accomodation/${data.id}`}>
-                    <Card title={data.title} cover={data.cover}/>
-                </Link> 
-              ))}  
-                
+              {accomodationData.map((data) => ( 
+                    <Card id={data.id} title={data.title} cover={data.cover}/> 
+              ))}         
           </div>
         </div>
       </main>
