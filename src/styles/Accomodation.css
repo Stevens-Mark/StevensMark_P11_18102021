@@ -1,3 +1,19 @@
-.test h1 {
-    color: black;
+.accomodationWrapper {
+    max-width: 1240px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #FF6060;
+    margin: auto;
+}
+
+.accomodationTitle {
+    font-weight: 500;
+    font-size: clamp(1.125rem, 2.5vw, 2.25rem);
+    margin: unset;
+}
+
+.accomodationLocation {
+    font-weight: 500;
+    font-size: clamp(0.875rem, 1.2vw, 1.125rem);
 }

@@ -1,0 +1,19 @@
+.hostWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.hostTitle {
+    width: 100px;
+    text-align: right;
+    font-weight: 500;
+    margin: unset;
+    font-size: clamp(0.75rem, 1.736vw, 1.125rem);
+}
+.hostPhoto {
+    margin-left: 10px;
+    border-radius: 50%;
+    width: clamp(2rem, 4.5vw,4rem);
+    height: clamp(2rem, 4.5vw,4rem);
+}
