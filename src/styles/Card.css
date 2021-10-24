@@ -1,7 +1,7 @@
 .accomodationCard {
     height: 340px;
     width: 340px; 
-    margin: 20px   
+    margin: 20px;
 }
 .coverImage {
     object-fit: cover;

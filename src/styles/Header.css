@@ -31,7 +31,7 @@ nav ul {
   font-size: clamp(0.75rem, 2vw, 2rem);
 }
 
-a:hover {
+.navlink:hover {
   text-decoration: underline;
 }
 

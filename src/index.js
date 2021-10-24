@@ -21,6 +21,9 @@ ReactDOM.render(
             <Route path="/about">
               <About />
             </Route>
+            <Route path="/accomodation/:id">
+                {/* <Profile /> */}
+            </Route>
             <Route>
               <Error />
             </Route>

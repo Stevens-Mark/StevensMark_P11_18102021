@@ -13,6 +13,7 @@ export default class About extends Component {
         <div className="aboutWrapper">
           <span className='aboutBanner'>
               <Banner image={aboutBanner} alternate='A Mountain Scene'/>
+              <h1 className='slogan'>About</h1>
           </span>     
             {aboutData.map((data) => (
             <DropDown key={data.id} title={data.title} content={data.content}/>
