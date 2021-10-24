@@ -8,6 +8,7 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 import Home from './pages/Home'
 import About from './pages/About'
+import Accomodation from './pages/Accomodation'
 import Error from './pages/Error'
 
 ReactDOM.render(
@@ -21,9 +22,10 @@ ReactDOM.render(
             <Route path="/about">
               <About />
             </Route>
-            <Route path="/accomodation/:id">
-                {/* <Profile /> */}
-            </Route>
+            <Route
+              path="/accomodation/:id"
+              render={(props) => <Accomodation {...props} />}
+            />
             <Route>
               <Error />
             </Route>
