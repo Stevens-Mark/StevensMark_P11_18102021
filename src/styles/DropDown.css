@@ -2,7 +2,6 @@
   max-width: 1023px;
   width: 100%;
   /* margin: auto; */
-  margin-bottom: 1.875rem;
 }
 
 .dropDownTitle {
@@ -56,6 +55,10 @@
   } */
 
   @media screen and (min-width: 600px) {
+    .dropDown {
+      margin-bottom: 1.875rem;
+    }    
+    
     .dropDownTitle {
       margin-top: 3.125rem;
       height: 3rem;
