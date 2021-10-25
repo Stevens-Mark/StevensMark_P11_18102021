@@ -43,7 +43,7 @@ export default class DropDown extends Component {
     return (
         <div className='dropDown' /*ref={this.container}*/>
             <div className="dropDownTitle" onClick={this.handleButtonClick}>
-                <span>{title}</span>
+                <span >{title}</span>
                 <span>{open ? (<img src={upArrow} alt="icon" />) : 
                     (<img src={downArrow} alt="icon" />)} </span>
             </div>

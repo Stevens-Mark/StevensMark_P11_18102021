@@ -1,6 +1,8 @@
 import { Component } from 'react'
 import accomodationData from '../data/logements.json'
+import Carousel from '../components/Carousel'
 import Host from '../components/Host'
+import Tags from '../components/Tags'
 
 import '../styles/Accomodation.css'
  
@@ -15,12 +17,17 @@ export default class Accomodation extends Component {
         return (
             <main>
                 <div className='accomodationWrapper'>
-                    <div>
-                        <h1 className='accomodationTitle'>{title} </h1>
-                        <span className='accomodationLocation'>{location}</span>    
+                    <Carousel />
+                    <div className='accomodationHeader'>
+                        <div>
+                            <h1 className='accomodationTitle'>{title} </h1>
+                            <p className='accomodationLocation'>{location}</p>    
+                        </div>
+                        <Host name={host.name} picture={host.picture}/>
                     </div>
-                    <Host name={host.name} picture={host.picture}/>
+                    <Tags tagData={tags}/>
                 </div>
+                
             </main>
         )
     }

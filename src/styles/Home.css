@@ -2,14 +2,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-content: center; */
-    /* max-height: 13.938rem; */
 }
 
 .homeBanner {
     display: flex;
     align-items: center;
 }
+
 .slogan {
     margin: 36px;
     position: absolute;
