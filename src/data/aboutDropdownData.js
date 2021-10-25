@@ -1,4 +1,5 @@
-[
+
+export const dropDownList = [
 	{
 		"id": "v1",
 		"title": "Fiabilité",
