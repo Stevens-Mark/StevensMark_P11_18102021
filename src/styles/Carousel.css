@@ -4,6 +4,7 @@
     position: relative;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .carouselImages {
@@ -27,6 +28,13 @@
 
 .previousControlArrows, .nextControlArrows  {
     width: 30px;
+}
+
+.counter {
+    position: absolute;
+    bottom: 10px;
+    font-size: 18px;
+    margin: unset;
 }
 
 /* MEDIA QUERIES */

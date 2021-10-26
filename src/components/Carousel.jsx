@@ -16,28 +16,25 @@ export default class Carousel extends Component {
     this.setState({ currentPhoto: this.state.currentPhoto + 1 })
   }
 
-  previousePhoto = () => {
+  previousPhoto = () => {
     this.setState({ currentPhoto: this.state.currentPhoto - 1 })
   }
 
   render() { 
     const { photoAlbum } = this.props
     const { currentPhoto } = this.state
+    console.log(photoAlbum.length)
+    const totalPictures = photoAlbum.length
+ 
+
     return (   
           <div className='carouselWrapper'>
-            
             <div className='carouselControls'>
-              <div>
-              <img className='previousControlArrows' src={previousArrow} alt=''/>
-              </div>
-              <img className='nextControlArrows' src={nextArrow} alt=''/>
-
+              <img className='previousControlArrows' src={previousArrow} alt='précédent' onClick={this.previousPhoto} />
+              <img className='nextControlArrows' src={nextArrow} alt='suivant' onClick={this.nextPhoto} />
             </div>
-            <img className='carouselImages' src={photoAlbum[currentPhoto]} alt=''/>
-              
-            {/* {photoAlbum.map((photo) => (
-              <img className='carouselImages' src={photo} alt=''/>
-               ))} */}
+              <img className='carouselImages' src={photoAlbum[currentPhoto]} alt='' />
+              <p className='counter'>{currentPhoto}/{totalPictures}</p>
           </div>     
     )
   }
