@@ -4,11 +4,11 @@ import '../styles/Tags.css'
 export default class Tags extends Component {
     render() {
         const {tagData} = this.props
-        const tags = tagData
+        // const tags = tagData
         return (
             <div className='tagWrapper'>
-                {tags.map((tag) => ( 
-                    <p key={tag} className='tagTitle'>{tag}</p>
+                {tagData.map((tag) => ( 
+                    <h3 key={tag} className='tagTitle'>{tag}</h3>
                 ))}  
             </div>
         )

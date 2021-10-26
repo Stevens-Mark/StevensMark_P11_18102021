@@ -16,7 +16,7 @@ export default class About extends Component {
               <h1 className='slogan'>About</h1>
           </span>     
             {dropDownList.map((data) => (
-            <DropDown key={data.id} title={data.title} content={data.content}/>
+            <DropDown key={data.id} dropdownPurpose='DropdownAboutPage' dropdownType='dropDownListAbout' title={data.title} content={data.content}/>
             ))}   
         </div>
       </main>

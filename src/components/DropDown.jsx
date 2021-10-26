@@ -39,17 +39,23 @@ export default class DropDown extends Component {
   
   render() {
     const { open } = this.state
-    const {id, title, content} = this.props
+    const {dropdownPurpose, dropdownType, title, content} = this.props
+   
     return (
-        <div className='dropDown' /*ref={this.container}*/>
-            <div className="dropDownTitle" onClick={this.handleButtonClick}>
-                <span >{title}</span>
-                <span>{open ? (<img src={upArrow} alt="icon" />) : 
-                    (<img src={downArrow} alt="icon" />)} </span>
+        <div className={dropdownPurpose} /*ref={this.container}*/>
+            <div className='dropDownTitleBar' onClick={this.handleButtonClick}>
+                <h2 className='dropDownTitleBarText'>{title}</h2>
+                <span>{open ? (<img className='dropdownArrow' src={upArrow} alt="icon" />) : 
+                    (<img className='dropdownArrow' src={downArrow} alt="icon" />)} </span>
             </div>
 
-            {open && (
-            <p key={id} className="dropDownList">{content}</p>)}
+            {open && (typeof(content) === 'string' ? (
+            <p className={dropdownType}>{content}</p>) :  
+            ( <ul className={dropdownType}>
+                {content.map((equipment, index) => (
+                  <li key={`${equipment}-${index}`}>{equipment}</li> ))}
+              </ul>
+            ))}                     
         </div>
     )
   }

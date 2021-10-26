@@ -5,8 +5,7 @@ import '../styles/Carousel.css'
 export default class Carousel extends Component {
  
   render() { 
-    return ( 
-      
+    return (   
           <div className='carouselWrapper'>
               <img className='carouselImages' src={aboutBanner} alt=''/>
               {/* <h1 className='slogan'>About</h1> */}

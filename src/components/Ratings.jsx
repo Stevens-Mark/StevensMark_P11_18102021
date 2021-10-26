@@ -8,17 +8,17 @@ export default class Ratings extends Component {
 
     render() { 
         const {ratingNumber} = this.props
-        const ratingValue = ratingNumber
+        // const ratingValue = ratingNumber
         const range = [1, 2, 3, 4, 5]
 
 	return (
 		<div className='ratingsWrapper'>
 			{range.map((rangeElem) =>
-				ratingValue >= rangeElem ? (
+				ratingNumber >= rangeElem ? (
 					<img className='star' key={rangeElem.toString()} src={solidStar} alt='' />
 				) : <img className='star' key={rangeElem.toString()} src={clearStar} alt='' />
 			)}
 		</div>
-	)
-}
+		)
+	}
 }

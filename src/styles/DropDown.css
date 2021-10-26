@@ -1,10 +1,16 @@
-.dropDown {
+.DropdownAboutPage {
   max-width: 1023px;
   width: 100%;
   /* margin: auto; */
 }
 
-.dropDownTitle {
+.DropdownAccomPage {
+  max-width: 600px;
+  width: 100%;
+  /* margin: auto; */
+}
+
+.dropDownTitleBar {
     margin-top: 20px;
     display: flex;
     max-width: 1023px;
@@ -14,16 +20,24 @@
     height: 1.875rem;
     border-radius: 5px;
     cursor: pointer;
+    padding: 7px 15px 7px 15px;
+    box-shadow: 0px 7px 12px 3px #d9d9d9;
+  }
+
+  .dropDownTitleBarText {
     font-size: clamp(0.813rem, 1.6vw, 1.5rem);
     font-weight: 500;
-    padding: 7px 15px 7px 15px;
+  }
+
+  .dropdownArrow {
+    width: 1rem;
   }
 
   .dropDown img {
     width: clamp(0.875rem, 1.2vw, 1.5rem);
   }
 
-  .dropDownList {
+  .dropDownListAbout {
     position: relative;
     z-index: 2;
     background: #F6F6F6;
@@ -32,9 +46,22 @@
     font-weight: 400;
     border-radius: 5px;
     padding: 0.75rem;
-    border: 1px solid rgba(0, 0, 0, 0.04);
-    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14);
+    box-shadow: 0px 7px 12px 3px #d9d9d9;
     margin: unset;
+  }
+
+  .dropDownListAccomodation {
+    position: relative;
+    z-index: 2;
+    background: #F6F6F6;
+    color: #FF6060;
+    font-size: clamp(0.75rem, 1.6vw, 1.5rem);
+    font-weight: 400;
+    border-radius: 5px;
+    padding: 0.75rem;
+    box-shadow: 0px 7px 12px 3px #d9d9d9;
+    margin: unset;
+    height: 160px;
   }
   
   ul {
@@ -42,6 +69,8 @@
     padding: 0;
     margin: 0;
   }
+
+
 
   /* li {
     padding: 8px 12px;
@@ -53,19 +82,35 @@
     cursor: pointer;
   } */
 
-  @media screen and (min-width: 600px) {
+
+  /* MEDIA QUERIES */
+
+  @media screen and (min-width: 660px) {
+    .dropdownArrow {
+      width: 1.2rem;
+    }
+
+    .dropDownListAccomodation{
+      height: 200px;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
     .dropDown {
       margin-bottom: 1.875rem;
     }    
     
-    .dropDownTitle {
+    .dropDownTitleBar {
       margin-top: 3.125rem;
       height: 3rem;
     }
 
-    .dropDownList{
-      /* position: relative;
-      top: -10px; */
+    .dropdownArrow {
+      width: 1.5rem;
+    }
+
+    .dropDownListAccomodation{
+      height: 290px;
       padding: 25px 15px 15px 15px;
     }
   }

@@ -27,6 +27,11 @@
     font-size: clamp(0.875rem, 1.2vw, 1.125rem);
 }
 
+.accomodationDetails {
+  display: flex;
+  flex-direction: column;
+}
+
 .hostSummary {
   display: flex;
   justify-content: space-between;
@@ -35,6 +40,14 @@
 }
 
  /* MEDIA QUERIES */
+
+ @media screen and (min-width: 600px) {
+  .accomodationDetails {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 3.125rem;
+  }
+}
 
 @media screen and (min-width: 660px) {
   .accomodationHeader {

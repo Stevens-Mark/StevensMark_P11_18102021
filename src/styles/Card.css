@@ -4,12 +4,14 @@
     height: 255px;
     margin: 1.25rem 0rem;
     flex: 1 1 355px;
+    transition: 0.4s;
 }
 
 .accomodationCard:hover{
     opacity: 0.85;
     filter: brightness(100%);
     box-shadow: 0 2px 4px rgba(0, 0, 0, .8);
+    transition: 0.4s;
 }
 
 .coverImage {
@@ -31,6 +33,9 @@
     bottom: 4rem;
     margin: 0.625rem;
 }
+
+
+/* MEDIA QUERIES */
 
 @media screen and (min-width: 670px) {
     .accomodationCard {

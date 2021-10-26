@@ -5,7 +5,6 @@ import '../styles/Card.css'
 export default class Card extends Component {
 
   render() {
-
     const {id, title, cover} = this.props
     return (
         <article className='accomodationCard' key={id}>

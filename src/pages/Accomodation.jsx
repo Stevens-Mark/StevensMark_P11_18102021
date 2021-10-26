@@ -3,6 +3,7 @@ import accomodationData from '../data/logements.json'
 import Carousel from '../components/Carousel'
 import Host from '../components/Host'
 import Tags from '../components/Tags'
+import DropDown from '../components/Dropdown'
 import Ratings from '../components/Ratings'
 
 import '../styles/Accomodation.css'
@@ -45,8 +46,9 @@ export default class Accomodation extends Component {
         const chosenAccomodation = accomodationData.find((data) => data.id === accomodationId)
         const {id, pictures, title, location, tags, host, rating, description, equipments,
         } = chosenAccomodation
-
-        
+    
+console.log(typeof description )
+console.log(typeof equipments)
         return (
             <main>
                 <div className='accomodationWrapper'>
@@ -64,6 +66,11 @@ export default class Accomodation extends Component {
                             <Ratings ratingNumber={rating}/>
                         </div>
                     </div>   
+
+                    <div className='accomodationDetails'>
+                        <DropDown dropdownPurpose='DropdownAccomPage' dropdownType='dropDownListAccomodation' title={'Description'} content={description}/>
+                        <DropDown dropdownPurpose='DropdownAccomPage' dropdownType='dropDownListAccomodation'  title={'Equipment'} content={equipments}/>
+                    </div>
                 </div>       
                 
             </main>
