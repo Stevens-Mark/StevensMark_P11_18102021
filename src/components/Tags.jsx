@@ -8,7 +8,7 @@ export default class Tags extends Component {
         return (
             <div className='tagWrapper'>
                 {tags.map((tag) => ( 
-                    <p className='tagTitle'>{tag}</p>
+                    <p key={tag} className='tagTitle'>{tag}</p>
                 ))}  
             </div>
         )

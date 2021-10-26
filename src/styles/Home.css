@@ -10,24 +10,26 @@
 }
 
 .slogan {
-    margin: 36px;
+    margin: 2.25rem;
     position: absolute;
     font-size: clamp(1.5rem, 3.5vw, 3.75rem);
     font-weight: 500;
 }
 
 .accomodationContainer {
-    margin-top: 20px;
+    margin-top: 1.25rem;
     max-width: 1240px;
-    border-radius: 25px;
+    border-radius: 1.563rem;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
 }
 
+/* MEDIA QUERIES */
+
 @media screen and (min-width: 670px) {
     .accomodationContainer {
         background: #F6F6F6;
-        margin-top: 40px;
+        margin-top: 2.5rem;
     }
 }

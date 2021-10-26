@@ -35,6 +35,9 @@ nav ul {
   text-decoration: underline;
 }
 
+
+/* MEDIA QUERIES */
+
 @media screen and (max-width: 1240px) {
   .header {
     margin: 1.25rem;
