@@ -52,7 +52,7 @@ console.log(typeof equipments)
         return (
             <main>
                 <div className='accomodationWrapper'>
-                    <Carousel />
+                    <Carousel photoAlbum={pictures}/>
                     <div className='accomodationHeader'>
 
                         <div>
