@@ -4,7 +4,6 @@
     flex-direction: column;
     justify-content: center;
     margin: auto;
-    
 } 
 
 .accomodationHeader { 
@@ -58,8 +57,8 @@
 
   .accomodationLocation {
     margin-top: 1.25rem;
- 
 }
+
   .hostSummary {
     display: block;
   }

@@ -46,9 +46,7 @@ export default class Accomodation extends Component {
         const chosenAccomodation = accomodationData.find((data) => data.id === accomodationId)
         const {id, pictures, title, location, tags, host, rating, description, equipments,
         } = chosenAccomodation
-    
-console.log(typeof description )
-console.log(typeof equipments)
+
         return (
             <main>
                 <div className='accomodationWrapper'>
