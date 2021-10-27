@@ -2,7 +2,7 @@ import { Component} from "react"  /*createRef */
 import PropTypes from 'prop-types'
 import upArrow from '../assets/arrows/up_arrow_white.svg'
 import downArrow from '../assets/arrows/down_arrow_white.svg'
-import '../styles/Dropdown.css'
+import '../styles/DropDown.css'
 
 export default class DropDown extends Component {
     // constructor(props) {

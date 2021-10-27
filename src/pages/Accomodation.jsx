@@ -3,7 +3,7 @@ import accomodationData from '../data/logements.json'
 import Carousel from '../components/Carousel'
 import Host from '../components/Host'
 import Tags from '../components/Tags'
-import DropDown from '../components/Dropdown'
+import DropDown from '../components/DropDown'
 import Ratings from '../components/Ratings'
 import Error from './Error'
 

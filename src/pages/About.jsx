@@ -2,7 +2,7 @@ import { Component } from "react"
 import Banner from '../components/Banner'
 import aboutBanner from '../assets/aboutBanner.jpg'
 import { dropDownList} from '../data/aboutDropdownData.js'
-import DropDown from '../components/Dropdown'
+import DropDown from '../components/DropDown'
 import '../styles/About.css'
 
 export default class About extends Component {
