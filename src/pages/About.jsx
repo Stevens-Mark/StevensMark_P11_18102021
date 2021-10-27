@@ -13,7 +13,7 @@ export default class About extends Component {
         <div className="aboutWrapper">
           <span className='aboutBanner'>
               <Banner image={aboutBanner} alternate='A Mountain Scene'/>
-              <h1 className='sr-only'>About</h1>
+              <h1 className='sr-only'>A Propos</h1>
           </span>     
             {dropDownList.map((data) => (
             <DropDown key={data.id} dropdownPurpose='DropdownAboutPage' dropdownType='dropDownListAbout' title={data.title} content={data.content}/>
