@@ -9,7 +9,6 @@ export default class Ratings extends Component {
 
     render() { 
         const {ratingNumber} = this.props
-        // const ratingValue = ratingNumber
         const range = [1, 2, 3, 4, 5]
 
 	return (

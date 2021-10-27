@@ -5,7 +5,7 @@ import '../styles/Tags.css'
 export default class Tags extends Component {
     render() {
         const {tagData} = this.props
-        // const tags = tagData
+        
         return (
             <div className='tagWrapper'>
                 {tagData.map((tag) => ( 

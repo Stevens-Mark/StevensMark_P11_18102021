@@ -3,10 +3,7 @@ import PropTypes from 'prop-types'
 import '../styles/Banner.css'
 
 export default class Banner extends Component {
-    // constructor(props) {
-    //     super(props)
-    //     this.state = {}
-    // }
+
   render() { 
     const {image, alternate} = this.props
     return (
