@@ -1,4 +1,5 @@
 import { Component } from "react"
+import PropTypes from 'prop-types'
 import previousArrow from '../assets/arrows/white_back_arrow.svg'
 import nextArrow from '../assets/arrows/white_forward_arrow.svg'
 import '../styles/Carousel.css'
@@ -40,9 +41,13 @@ export default class Carousel extends Component {
               <img className='previousControlArrows' src={previousArrow} alt='précédent' onClick={this.previousSlide} />
               <img className='nextControlArrows' src={nextArrow} alt='suivant' onClick={this.nextSlide} />
             </div>
-              <img className='carouselImages' src={photoAlbum[currentImageIndex]} alt='' />
+              <img className='carouselImages' src={photoAlbum[currentImageIndex]} alt='Carousel Gallery' />
               <p className='counter'>{currentImageIndex+1}/{this.state.length}</p>
           </div>     
     )
   }
 }
+
+Carousel.propTypes = {
+  photoAlbum : PropTypes.array.isRequired,
+ }

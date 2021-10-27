@@ -1,4 +1,5 @@
 import { Component } from "react"
+import PropTypes from 'prop-types'
 import '../styles/Banner.css'
 
 export default class Banner extends Component {
@@ -12,4 +13,9 @@ export default class Banner extends Component {
           <img className="banner" src={image} alt={alternate}/>
     )
   }
+}
+
+Banner.propTypes = {
+  image: PropTypes.string.isRequired,
+  alternate: PropTypes.string.isRequired,
 }

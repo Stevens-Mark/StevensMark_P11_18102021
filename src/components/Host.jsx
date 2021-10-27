@@ -1,5 +1,7 @@
 import { Component } from 'react'
+import PropTypes from 'prop-types'
 import '../styles/HostDetails.css'
+import DefaultPicture from '../assets/profile.png'
  
 export default class Host extends Component {
 
@@ -13,4 +15,12 @@ export default class Host extends Component {
         )
     }
 }
- 
+
+Host.propTypes = {
+    name: PropTypes.string.isRequired,
+    picture: PropTypes.string.isRequired,
+  }
+
+  Host.defaultProps = {
+    picture: DefaultPicture,
+}
