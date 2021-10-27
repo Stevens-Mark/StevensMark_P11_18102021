@@ -1,10 +1,10 @@
 import { Component } from "react"
-
 import Banner from '../components/Banner'
 import homeBanner from '../assets/homeBanner.jpg'
 import accomodationData from '../data/logements.json'
 import Card from '../components/Card'
 import '../styles/Home.css'
+// key={`${data.id}-${index}`}
 
 export default class Home extends Component {
   render() { 
@@ -17,7 +17,7 @@ export default class Home extends Component {
             </span>  
           <div className='accomodationContainer'>
               {accomodationData.map((data) => ( 
-                    <Card id={data.id} title={data.title} cover={data.cover}/> 
+                    <Card key={data.id} id={data.id} title={data.title} cover={data.cover}/> 
               ))}         
           </div>
         </div>
@@ -25,3 +25,6 @@ export default class Home extends Component {
     )
   }
 }
+
+
+

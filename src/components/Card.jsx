@@ -7,7 +7,7 @@ export default class Card extends Component {
   render() {
     const {id, title, cover} = this.props
     return (
-        <article className='accomodationCard' key={id}>
+        <article className='accomodationCard'>
           <Link to={`/accomodation/${id}`}>
             <img className='coverImage' src={cover} alt=''/>
             <h2 className='coverTitle'>{title}</h2>
