@@ -34,14 +34,15 @@ export default class Carousel extends Component {
   render() { 
     const { photoAlbum } = this.props
     const {currentImageIndex} = this.state
- 
+
+   console.log(this.props.photoAlbum)
     return (   
           <div className='carouselWrapper'>
             <div className='carouselControls'>
               <img className='previousControlArrows' src={previousArrow} alt='précédent' onClick={this.previousSlide} />
               <img className='nextControlArrows' src={nextArrow} alt='suivant' onClick={this.nextSlide} />
             </div>
-              <img className='carouselImages' src={photoAlbum[currentImageIndex]} alt='Carousel Gallery' />
+              <img className='carouselImages' src={"undefined" || this.props.photoAlbum[currentImageIndex]} alt='Carousel Gallery' />
               <p className='counter'>{currentImageIndex+1}/{this.state.length}</p>
           </div>     
     )
