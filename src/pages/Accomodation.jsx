@@ -9,7 +9,6 @@ import Error from './Error'
 
 import '../styles/Accomodation.css'
  
-
 export default class Accomodation extends Component {
   constructor(props) {
     super(props)
@@ -45,72 +44,18 @@ export default class Accomodation extends Component {
   componentDidMount() {
     this.getData("../logements.json")
   }
-    // constructor(props) {
-    //     super(props)
-    //     this.state = {
-    //         profileData: {},
-    //     }
-    // }
- 
-    // componentDidMount() {
-    //     const { id } = this.props.match.params
- 
-    //     fetch(`../src/data/logements.json`)
-    //     .then((response) => response.json())
-    //     .then(({ surveyData }) => console.log(surveyData))
-    //     .catch((error) => console.log(error))
-    // }
-
-    // render() {
-    //     const { profileData } = this.state
-    //     const {
-    //         id, pictures, title, location, tags, host, rating, description, equipments,
-    //     } = profileData
-
-
-    // constructor(props) {
-    //     super(props)
-    //     this.state = {
-    //         profileData: {},
-    //     }
-    // }
-        
-    // componentDidMount() {
-    //     const { id } = this.props.match.params
-
-
-    //     fetch('logements.json', {
-    //         mode: 'no-cors'
-    //      })
-    //      .then(response => response.text())
-    //      .then(data => console.log(data))
-    //      .catch(error => console.error(error));
-
-    //     const chosenAccomodation = accomodationData.find((data) => data.id === id)
-    //     this.setState({ profileData: chosenAccomodation })
-    // }
-
-
-   
 
     render() {
+
+        if (this.state.error) {
+            return ( <Error />)
+        }
+
         const { datas } = this.state
         const {
-            id, pictures, title, location, tags, host, rating, description, equipments,
+            pictures, title, location, tags, host, rating, description, equipments,
         } = datas
 
-        console.log(pictures)
-        
-        // if (isLoaded) {
-        //   return <p>Loading ...</p>;
-        // }
-        // const accomodationId = this.props.match.params.id
-        // const chosenAccomodation = accomodationData.find((data) => data.id === accomodationId)
-
-        // if (chosenAccomodation) {
-        //     const {pictures, title, location, tags, host, rating, description, equipments,
-        //     } = chosenAccomodation
-            
             return (
                 <main>
                     <div className='accomodationWrapper'>
@@ -136,12 +81,6 @@ export default class Accomodation extends Component {
                     </div>       
                 </main>
             )
-            } 
-    //         else {
-    //             return (
-    //             <Error />
-    //             )
-    //         }
-    // }
+    }
 }
  

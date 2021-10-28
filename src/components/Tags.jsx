@@ -1,5 +1,5 @@
 import { Component } from 'react'
-import PropTypes from 'prop-types'
+// import PropTypes from 'prop-types'
 import '../styles/Tags.css'
  
 export default class Tags extends Component {
@@ -17,7 +17,7 @@ export default class Tags extends Component {
     }
 }
  
-Tags.propTypes = {
-    tagData: PropTypes.array.isRequired,
-}
+// Tags.propTypes = {
+//     tagData: PropTypes.array.isRequired,
+// }
   

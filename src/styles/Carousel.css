@@ -25,7 +25,6 @@
 
 .previousControlArrows, .nextControlArrows  {
     width: 1.875rem;
-    background: black;
 }
 
 .counter {

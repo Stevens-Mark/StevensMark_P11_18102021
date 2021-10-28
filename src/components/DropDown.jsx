@@ -1,5 +1,5 @@
 import { Component} from "react"  /*createRef */
-import PropTypes from 'prop-types'
+// import PropTypes from 'prop-types'
 import upArrow from '../assets/arrows/up_arrow_white.svg'
 import downArrow from '../assets/arrows/down_arrow_white.svg'
 import '../styles/DropDown.css'
@@ -62,13 +62,13 @@ export default class DropDown extends Component {
   }
 }
 
-DropDown.propTypes = {
-  dropdownPurpose: PropTypes.string.isRequired,
-  dropdownType: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
-  content: PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.array,
-  ]).isRequired,
-}
+// DropDown.propTypes = {
+//   dropdownPurpose: PropTypes.string.isRequired,
+//   dropdownType: PropTypes.string.isRequired,
+//   title: PropTypes.string.isRequired,
+//   content: PropTypes.oneOfType([
+//     PropTypes.string,
+//     PropTypes.array,
+//   ]).isRequired,
+// }
 
