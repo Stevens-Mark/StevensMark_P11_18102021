@@ -47,10 +47,13 @@ export default class Accomodation extends Component {
 
     render() {
 
-        if (this.state.error) {
-            return ( <Error />)
-        }
-
+        if (!this.state.isLoaded) {       
+          return (
+            <main className='loading'>  
+              <div className='loadingText'>Loading ... </div> 
+            </main>
+          )
+        } else {
         const { datas } = this.state
         const {
             pictures, title, location, tags, host, rating, description, equipments,
@@ -58,6 +61,7 @@ export default class Accomodation extends Component {
 
             return (
                 <main>
+                  
                     <div className='accomodationWrapper'>
                         <Carousel photoAlbum={pictures}/>
                         <div className='accomodationHeader'>
@@ -81,6 +85,14 @@ export default class Accomodation extends Component {
                     </div>       
                 </main>
             )
+            // } else {
+            //   return (
+            //     <Error />
+            //     )
+
+            // }
+            }
+
     }
 }
  
