@@ -51,41 +51,41 @@ export default class Accomodation extends Component {
   }
 
     render() {
-        const { datas } = this.state
+      const { datas, error, isLoaded } = this.state
         const { pictures, title, location, tags, host, rating, description, equipments, } = datas
 
             return (
                 <main>
-                  {this.state.error && (
+                  {error && (
                     <Error />
                   )}
-                    {!this.state.isLoaded ? (      
-                    <div className='loading'>  
-                      <div>Loading ... </div> 
-                    </div> )  :
-                    (      
-                      <div className='accomodationWrapper'>
-                        <Carousel photoAlbum={pictures}/>
-                        <div className='accomodationHeader'>
+                  {!isLoaded ? (      
+                  <div className='loading'>  
+                    <div>Loading ... </div> 
+                  </div> )  :
+                  (      
+                    <div className='accomodationWrapper'>
+                      <Carousel photoAlbum={pictures}/>
+                      <div className='accomodationHeader'>
 
-                            <div>
-                                <h1 className='accomodationTitle'>{title} </h1>
-                                <p className='accomodationLocation'>{location}</p> 
-                                <Tags tagData={tags} />
-                            </div>
+                          <div>
+                              <h1 className='accomodationTitle'>{title} </h1>
+                              <p className='accomodationLocation'>{location}</p> 
+                              <Tags tagData={tags} />
+                          </div>
 
-                            <div className='hostSummary'>
-                                <Host hostData={host} />
-                                <Ratings ratingNumber={rating}/>
-                            </div>
-                        </div>   
+                          <div className='hostSummary'>
+                              <Host hostData={host} />
+                              <Ratings ratingNumber={rating}/>
+                          </div>
+                      </div>   
 
-                        <div className='accomodationDetails'>
-                            <DropDown dropdownPurpose='DropdownAccomPage' dropdownType='dropDownListAccomodation' title={'Description'} content={description}/>
-                            <DropDown dropdownPurpose='DropdownAccomPage' dropdownType='dropDownListAccomodation'  title={'Equipment'} content={equipments}/>
-                        </div>
-                      </div>    
-                    )}   
+                      <div className='accomodationDetails'>
+                          <DropDown dropdownPurpose='DropdownAccomPage' dropdownType='dropDownListAccomodation' title={'Description'} content={description}/>
+                          <DropDown dropdownPurpose='DropdownAccomPage' dropdownType='dropDownListAccomodation'  title={'Equipment'} content={equipments}/>
+                      </div>
+                    </div>    
+                  )}   
                 </main>
           )
     }
