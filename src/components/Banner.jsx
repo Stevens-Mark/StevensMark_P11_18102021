@@ -2,6 +2,8 @@ import { Component } from "react"
 import PropTypes from 'prop-types'
 import '../styles/Banner.css'
 
+
+// Displays image in the Banner at top of page
 export default class Banner extends Component {
 
   render() { 

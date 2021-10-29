@@ -4,6 +4,8 @@ import upArrow from '../assets/arrows/up_arrow_white.svg'
 import downArrow from '../assets/arrows/down_arrow_white.svg'
 import '../styles/DropDown.css'
 
+
+// Dropdown template used on the about page & accomodation page 
 export default class DropDown extends Component {
     // constructor(props) {
     //     super(props);
@@ -36,7 +38,6 @@ export default class DropDown extends Component {
     // componentWillUnmount() {
     //   document.removeEventListener("mousedown", this.handleClickOutside);
     // }
-
   
   render() {
     const { open } = this.state

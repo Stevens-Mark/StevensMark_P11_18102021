@@ -4,6 +4,8 @@ import previousArrow from '../assets/arrows/white_back_arrow.svg'
 import nextArrow from '../assets/arrows/white_forward_arrow.svg'
 import '../styles/Carousel.css'
 
+
+// Image carousel at top of page giving all the details of an accomodation
 export default class Carousel extends Component {
   constructor(props) {
     super(props)

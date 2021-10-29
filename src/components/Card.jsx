@@ -1,9 +1,9 @@
 import { Component } from "react"
 import { Link} from 'react-router-dom'
 import PropTypes from 'prop-types'
-
 import '../styles/Card.css'
 
+// Individual accomodation announcement card on home page
 export default class Card extends Component {
 
   render() {

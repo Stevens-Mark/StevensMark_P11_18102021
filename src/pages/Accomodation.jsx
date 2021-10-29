@@ -6,10 +6,9 @@ import Tags from '../components/Tags'
 import DropDown from '../components/DropDown'
 import Ratings from '../components/Ratings'
 import Error from './Error'
-
 import '../styles/Accomodation.css'
  
-
+/// Individual accomodation page template
 export default class Accomodation extends Component {
     // constructor(props) {
     //     super(props)

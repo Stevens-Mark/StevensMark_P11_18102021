@@ -3,6 +3,7 @@ import { Link, NavLink } from 'react-router-dom'
 import logo from '../assets/kasa_logo.svg'
 import '../styles/Header.css'
 
+// Header shown on all pages
 export default class Header extends Component {
     render() { 
       return (

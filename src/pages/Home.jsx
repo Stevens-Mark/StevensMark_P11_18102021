@@ -6,6 +6,7 @@ import Card from '../components/Card'
 import '../styles/Home.css'
 // key={`${data.id}-${index}`}
 
+// Home/Accueil page
 export default class Home extends Component {
   render() { 
     return (
