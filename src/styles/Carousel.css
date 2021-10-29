@@ -36,14 +36,14 @@
 
 /* MEDIA QUERIES */
 
-@media screen and (min-width: 425px) {
+@media screen and (min-width: 600px) {
     .previousControlArrows, .nextControlArrows  {
         width: 3.125rem;
     }
 
     .carouselImages {
         height: unset;
-        max-height: 25.938rem;
+        height: 25.938rem;
     }
 }
 

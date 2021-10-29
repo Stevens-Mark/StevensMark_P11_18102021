@@ -65,9 +65,8 @@
 }
 
 .loading {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  margin-top: 250px;
+  text-align: center;
   font-size: clamp(1rem, 2vw, 2rem);
   color:  #FF6060;
 }

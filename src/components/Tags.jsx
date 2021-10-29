@@ -1,15 +1,15 @@
 import { Component } from 'react'
-// import PropTypes from 'prop-types'
+import PropTypes from 'prop-types'
 import '../styles/Tags.css'
  
 export default class Tags extends Component {
 
     render() {
-        // const {tagData} = this.props
+        const {tagData} = this.props
         
         return (
             <div className='tagWrapper'>
-                {(this.props.tagData || []).map((tag) => ( 
+                {(tagData || []).map((tag) => ( 
                     <h3 key={tag} className='tagTitle'>{tag}</h3>
                 ))}  
             </div>
@@ -17,7 +17,7 @@ export default class Tags extends Component {
     }
 }
  
-// Tags.propTypes = {
-//     tagData: PropTypes.array.isRequired,
-// }
+Tags.propTypes = {
+    tagData: PropTypes.array.isRequired,
+}
   

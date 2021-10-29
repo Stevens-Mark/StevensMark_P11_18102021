@@ -32,13 +32,18 @@ export default class Accomodation extends Component {
             this.setState({
               isLoaded: true,
               datas: itemToShow,
-            })
-          }
-        },
+            }) 
+          } 
+          else {
+              this.setState({
+                error: true,
+              })
+            }
+         },
         (error) => {
           this.setState({ error })
         }
-      )
+      ) 
   }
 
   componentDidMount() {
@@ -46,23 +51,20 @@ export default class Accomodation extends Component {
   }
 
     render() {
-
-        if (!this.state.isLoaded) {       
-          return (
-            <main className='loading'>  
-              <div className='loadingText'>Loading ... </div> 
-            </main>
-          )
-        } else {
         const { datas } = this.state
-        const {
-            pictures, title, location, tags, host, rating, description, equipments,
-        } = datas
+        const { pictures, title, location, tags, host, rating, description, equipments, } = datas
 
             return (
                 <main>
-                  
-                    <div className='accomodationWrapper'>
+                  {this.state.error && (
+                    <Error />
+                  )}
+                    {!this.state.isLoaded ? (      
+                    <div className='loading'>  
+                      <div>Loading ... </div> 
+                    </div> )  :
+                    (      
+                      <div className='accomodationWrapper'>
                         <Carousel photoAlbum={pictures}/>
                         <div className='accomodationHeader'>
 
@@ -82,17 +84,10 @@ export default class Accomodation extends Component {
                             <DropDown dropdownPurpose='DropdownAccomPage' dropdownType='dropDownListAccomodation' title={'Description'} content={description}/>
                             <DropDown dropdownPurpose='DropdownAccomPage' dropdownType='dropDownListAccomodation'  title={'Equipment'} content={equipments}/>
                         </div>
-                    </div>       
+                      </div>    
+                    )}   
                 </main>
-            )
-            // } else {
-            //   return (
-            //     <Error />
-            //     )
-
-            // }
-            }
-
+          )
     }
 }
  
