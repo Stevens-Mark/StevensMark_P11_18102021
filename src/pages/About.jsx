@@ -5,6 +5,8 @@ import { dropDownList} from '../data/aboutDropdownData.js'
 import DropDown from '../components/DropDown'
 import '../styles/About.css'
 
+
+// About/A propos page
 export default class About extends Component {
  
   render() { 

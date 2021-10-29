@@ -4,7 +4,7 @@ import solidStar from '../assets/stars/red_solid_star.svg'
 import clearStar from '../assets/stars/clear_solid_star.svg'
 import '../styles/Ratings.css'
  
-
+// Host "star" rating
 export default class Ratings extends Component {
 
     render() { 

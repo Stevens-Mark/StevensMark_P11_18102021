@@ -1,14 +1,16 @@
 import { Component } from 'react'
-// import accomodationData from '../data/logements.json'
 import Carousel from '../components/Carousel'
 import Host from '../components/Host'
 import Tags from '../components/Tags'
 import DropDown from '../components/DropDown'
 import Ratings from '../components/Ratings'
 import Error from './Error'
-
 import '../styles/Accomodation.css'
- 
+
+//Individual accomodation page template
+// Data fetch(), displays Loading... or error page depending on state
+// json must be in public folder for fetch() to work...
+// relevant announcement displayed based on ID extracted from Url params
 export default class Accomodation extends Component {
   constructor(props) {
     super(props)

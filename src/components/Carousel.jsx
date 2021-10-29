@@ -5,6 +5,7 @@ import nextArrow from '../assets/arrows/white_forward_arrow.svg'
 import '../styles/Carousel.css'
 import Blank from '../assets/blank.jpg'
 
+// Carousel at top of page for accomodation announcement
 export default class Carousel extends Component {
   constructor(props) {
     super(props)
@@ -37,7 +38,7 @@ export default class Carousel extends Component {
               <img className='nextControlArrows' src={nextArrow} alt='suivant' onClick={nextSlide} />
             </div>
               <img className='carouselImages' src={pictures? pictures[currentImageIndex] : Blank} alt='Carousel Gallery' />
-              <p className='counter'>{currentImageIndex+1}/{ pictures?.length || 0 }</p>
+              <p className='counter'>{currentImageIndex+1}/{length || 0 }</p>
           </div>     
     )
   }

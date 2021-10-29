@@ -4,6 +4,11 @@ import upArrow from '../assets/arrows/up_arrow_white.svg'
 import downArrow from '../assets/arrows/down_arrow_white.svg'
 import '../styles/DropDown.css'
 
+
+// Dropdown component used for about page & accomodation page
+// params passed in to change style, height & info in the dropdown
+// commented out code enables ALL dropdown to close when user clicks outside a dropdown
+// but not needed for the project
 export default class DropDown extends Component {
     // constructor(props) {
     //     super(props);
