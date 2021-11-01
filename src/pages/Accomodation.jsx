@@ -55,13 +55,13 @@ export default class Accomodation extends Component {
     render() {
       const { datas, error, isLoaded } = this.state
         const { pictures, title, location, tags, host, rating, description, equipments, } = datas
-
+        
+        if (error)  
+        return ( <Error />)
+        
             return (
                 <main>
-                  {error && (
-                    <Error />
-                  )}
-                  {!isLoaded ? (      
+                   {!isLoaded ? (      
                   <div className='loading'>  
                     <div>Loading ... </div> 
                   </div> )  :
