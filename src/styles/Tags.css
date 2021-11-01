@@ -14,7 +14,7 @@
     color: #fff;
     background: #FF6060;
     padding: 5px;
-    width: clamp(5.7rem, 9.8vw, 11rem);
+    width: clamp(6rem, 9.8vw, 11rem);
     border-radius: 0.625rem;
     margin-right: 0.625rem;
     box-shadow: 0px 4px 12px 3px #d9d9d9;
