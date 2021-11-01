@@ -47,10 +47,10 @@ export default class DropDown extends Component {
   
   render() {
     const { open } = this.state
-    const {dropdownPurpose, dropdownType, title, content} = this.props
+    const {dropdownWidth, dropdownHeight, title, content} = this.props
    
     return (
-        <div className={dropdownPurpose} /* ref={this.container} */>
+        <div className={dropdownWidth} /* ref={this.container} */>
             <div className='dropDownTitleBar' onClick={this.handleButtonClick}>
                 <h2 className='dropDownTitleBarText'>{title}</h2>
                 <span>{open ? (<img className='dropdownArrow' src={upArrow} alt="icon" />) : 
@@ -58,8 +58,8 @@ export default class DropDown extends Component {
             </div>
 
             {open && (typeof(content) === 'string' ? (
-            <p className={dropdownType}>{content}</p>) :  
-            ( <ul className={dropdownType}>
+            <p className={dropdownHeight}>{content}</p>) :  
+            ( <ul className={dropdownHeight}>
                 {content.map((equipment, index) => (
                   <li key={`${equipment}-${index}`}>{equipment}</li> ))}
               </ul>
@@ -70,8 +70,8 @@ export default class DropDown extends Component {
 }
 
 DropDown.propTypes = {
-  dropdownPurpose: PropTypes.string.isRequired,
-  dropdownType: PropTypes.string.isRequired,
+  dropdownWidth: PropTypes.string.isRequired,
+  dropdownHeight: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   content: PropTypes.oneOfType([
     PropTypes.string,

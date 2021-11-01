@@ -83,8 +83,8 @@ export default class Accomodation extends Component {
                       </div>   
 
                       <div className='accomodationDetails'>
-                          <DropDown dropdownPurpose='DropdownAccomPage' dropdownType='dropDownListAccomodation' title={'Description'} content={description}/>
-                          <DropDown dropdownPurpose='DropdownAccomPage' dropdownType='dropDownListAccomodation'  title={'Equipment'} content={equipments}/>
+                          <DropDown dropdownWidth='DropdownAccomPage' dropdownHeight='dropDownListAccomodation' title={'Description'} content={description}/>
+                          <DropDown dropdownWidth='DropdownAccomPage' dropdownHeight='dropDownListAccomodation'  title={'Equipment'} content={equipments}/>
                       </div>
                     </div>    
                   )}   
