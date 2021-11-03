@@ -3,7 +3,8 @@ import { Link} from 'react-router-dom'
 import PropTypes from 'prop-types'
 import '../styles/Card.css'
 
-// Individual accomodation announcement card on home page
+// Individaul announcement card for each accomodation on Home page
+
 export default class Card extends Component {
 
   render() {

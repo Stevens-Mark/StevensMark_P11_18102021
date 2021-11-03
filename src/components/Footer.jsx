@@ -3,7 +3,8 @@ import { Link} from 'react-router-dom'
 import FooterLogo from '../assets/kasa_white_logo.svg'
 import '../styles/Footer.css'
 
-// Footer shown on all pages
+// Footer component displayed on all pages
+
 export default class Footer extends Component {
     render() { 
       return (

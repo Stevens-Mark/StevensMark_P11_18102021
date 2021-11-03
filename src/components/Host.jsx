@@ -2,16 +2,16 @@ import { Component } from 'react'
 import PropTypes from 'prop-types'
 import '../styles/HostDetails.css'
 import DefaultPicture from '../assets/profile.png'
- 
+
 // Host name & photograph
 export default class Host extends Component {
 
     render() {
-        const {name, picture} = this.props    
+       
         return (
         <div className='hostWrapper'>
-            <h2 className='hostTitle'>{name}</h2>
-            <img className='hostPhoto' src={picture} alt={name}/>
+            <h2 className='hostTitle'>{this.props.hostData.name || " "}</h2>
+            <img className='hostPhoto' src={this.props.hostData.picture || DefaultPicture} alt={this.props.hostData.name || " "}/>
         </div>
         )
     }
@@ -23,5 +23,6 @@ Host.propTypes = {
   }
 
   Host.defaultProps = {
+    name: '',
     picture: DefaultPicture,
 }

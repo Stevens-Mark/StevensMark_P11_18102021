@@ -1,19 +1,25 @@
-import { Component} from "react"  /*createRef */
+import { Component } from "react"  /*createRef */
 import PropTypes from 'prop-types'
 import upArrow from '../assets/arrows/up_arrow_white.svg'
 import downArrow from '../assets/arrows/down_arrow_white.svg'
 import '../styles/DropDown.css'
 
 
-// Dropdown template used on the about page & accomodation page 
+// Dropdown component used for about page & accomodation page
+// params passed in to change style, height & info in the dropdown
+// commented out code enables ALL dropdown to close when user clicks outside a dropdown
+// but not needed for the project
+
 export default class DropDown extends Component {
-    // constructor(props) {
-    //     super(props);
-    //     this.container = createRef();
-    //   }
+    constructor(props) {
+        super(props);
+        // this.container = createRef();
+        this.state = {
+          open: false,
+        }
       
-    state = { open: false }
-  
+      }
+      
     handleButtonClick = () => {
         this.setState(state => ({        
             open: !state.open     
@@ -41,10 +47,10 @@ export default class DropDown extends Component {
   
   render() {
     const { open } = this.state
-    const {dropdownPurpose, dropdownType, title, content} = this.props
+    const {dropdownWidth, dropdownHeight, title, content} = this.props
    
     return (
-        <div className={dropdownPurpose} /*ref={this.container}*/>
+        <div className={dropdownWidth} /* ref={this.container} */>
             <div className='dropDownTitleBar' onClick={this.handleButtonClick}>
                 <h2 className='dropDownTitleBarText'>{title}</h2>
                 <span>{open ? (<img className='dropdownArrow' src={upArrow} alt="icon" />) : 
@@ -52,8 +58,8 @@ export default class DropDown extends Component {
             </div>
 
             {open && (typeof(content) === 'string' ? (
-            <p className={dropdownType}>{content}</p>) :  
-            ( <ul className={dropdownType}>
+            <p className={dropdownHeight}>{content}</p>) :  
+            ( <ul className={dropdownHeight}>
                 {content.map((equipment, index) => (
                   <li key={`${equipment}-${index}`}>{equipment}</li> ))}
               </ul>
@@ -64,8 +70,8 @@ export default class DropDown extends Component {
 }
 
 DropDown.propTypes = {
-  dropdownPurpose: PropTypes.string.isRequired,
-  dropdownType: PropTypes.string.isRequired,
+  dropdownWidth: PropTypes.string.isRequired,
+  dropdownHeight: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   content: PropTypes.oneOfType([
     PropTypes.string,

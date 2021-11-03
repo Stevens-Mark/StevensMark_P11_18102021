@@ -5,8 +5,8 @@ import { dropDownList} from '../data/aboutDropdownData.js'
 import DropDown from '../components/DropDown'
 import '../styles/About.css'
 
+// About/A propos page
 
-// About page
 export default class About extends Component {
  
   render() { 
@@ -18,7 +18,7 @@ export default class About extends Component {
               <h1 className='sr-only'>A Propos</h1>
           </span>     
             {dropDownList.map((data) => (
-            <DropDown key={data.id} dropdownPurpose='DropdownAboutPage' dropdownType='dropDownListAbout' title={data.title} content={data.content}/>
+            <DropDown key={data.id} dropdownWidth='DropdownAboutPage' dropdownHeight='dropDownListAbout' title={data.title} content={data.content}/>
             ))}   
         </div>
       </main>

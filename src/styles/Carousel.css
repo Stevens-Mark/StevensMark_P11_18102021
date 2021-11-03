@@ -41,6 +41,7 @@
     }
 
     .carouselImages {
+        height: unset;
         height: 25.938rem;
     }
 }
