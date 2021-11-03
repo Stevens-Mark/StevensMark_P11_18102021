@@ -4,6 +4,7 @@ import PropTypes from 'prop-types'
 import '../styles/Card.css'
 
 // Individaul announcement card for each accomodation on Home page
+
 export default class Card extends Component {
 
   render() {

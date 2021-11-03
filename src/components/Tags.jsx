@@ -2,8 +2,8 @@ import { Component } from 'react'
 import PropTypes from 'prop-types'
 import '../styles/Tags.css'
 
-
 // Individual accomodation "tags"
+
 export default class Tags extends Component {
 
     render() {

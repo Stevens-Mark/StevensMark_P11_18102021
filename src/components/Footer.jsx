@@ -4,6 +4,7 @@ import FooterLogo from '../assets/kasa_white_logo.svg'
 import '../styles/Footer.css'
 
 // Footer component displayed on all pages
+
 export default class Footer extends Component {
     render() { 
       return (

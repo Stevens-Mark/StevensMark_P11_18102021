@@ -9,6 +9,7 @@ import '../styles/DropDown.css'
 // params passed in to change style, height & info in the dropdown
 // commented out code enables ALL dropdown to close when user clicks outside a dropdown
 // but not needed for the project
+
 export default class DropDown extends Component {
     constructor(props) {
         super(props);
@@ -43,7 +44,6 @@ export default class DropDown extends Component {
     // componentWillUnmount() {
     //   document.removeEventListener("mousedown", this.handleClickOutside);
     // }
-
   
   render() {
     const { open } = this.state

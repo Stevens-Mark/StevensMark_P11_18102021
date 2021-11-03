@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 import '../styles/HostDetails.css'
 import DefaultPicture from '../assets/profile.png'
 
-
 // Host name & photograph
 export default class Host extends Component {
 

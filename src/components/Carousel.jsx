@@ -6,6 +6,7 @@ import '../styles/Carousel.css'
 import Blank from '../assets/blank.jpg'
 
 // Carousel at top of page for accomodation announcement
+
 export default class Carousel extends Component {
   constructor(props) {
     super(props)

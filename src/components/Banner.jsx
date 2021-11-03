@@ -3,7 +3,9 @@ import PropTypes from 'prop-types'
 import '../styles/Banner.css'
 
 
+
 // component to display banner at top of Home/About page
+
 export default class Banner extends Component {
 
   render() { 

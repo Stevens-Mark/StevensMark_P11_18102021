@@ -10,6 +10,7 @@ import '../styles/Home.css'
 //Home page template
 // Data fetch(), displays Loading... or error page depending on state
 // json must be in public folder for fetch() to work...
+
 export default class Home extends Component {
   constructor(props) {
     super(props)
