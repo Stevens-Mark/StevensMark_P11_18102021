@@ -8,57 +8,37 @@ import Error from './Error'
 import '../styles/Accomodation.css'
 
 //Individual accomodation page template
-// Data fetch(), displays Loading... or error page depending on state
-// json must be in public folder for fetch() to work...
+// Displays Loading, error or page depending on state
 // relevant announcement displayed based on ID extracted from Url params
 export default class Accomodation extends Component {
+
   constructor(props) {
-    super(props)
-
+    super(props);
     this.state = {
-      error: null,
+      good: "",
       isLoaded: false,
-      datas: [],
-    }
-  }
-
-  getData(url) {
-    fetch(url)
-      .then((response) => response.json())
-      .then(
-        (jsonResponse) => {
-          const idInUrl = this.props.match.params.id
-          const itemToShow = jsonResponse.find((item) => item.id === idInUrl)
-
-          if (itemToShow) {
-            this.setState({
-              isLoaded: true,
-              datas: itemToShow,
-            }) 
-          } 
-          else {
-              this.setState({
-                error: true,
-              })
-            }
-         },
-        (error) => {
-          this.setState({ error })
-        }
-      ) 
+    };
   }
 
   componentDidMount() {
-    this.getData("../logements.json")
+    const idUrl = this.props.match.params.id;
+
+    const gd = this.props.kasaGoods.find((g) => g.id === idUrl);
+
+    this.setState({
+      good: gd,
+      isLoaded: this.props.isLoaded,
+    });
   }
 
     render() {
-      const { datas, error, isLoaded } = this.state
-        const { pictures, title, location, tags, host, rating, description, equipments, } = datas
-        
-        if (error)  
-        return ( <Error />)
-        
+      const { good, isLoaded } = this.state
+
+       console.log(good)
+        // if (error)  
+        // return ( <Error />)
+        if (!isLoaded) return <div></div>;
+        // if (this.props.good === undefined) return <Error />;
             return (
                 <main>
                    {!isLoaded ? (      
@@ -67,24 +47,24 @@ export default class Accomodation extends Component {
                   </div> )  :
                   (      
                     <div className='accomodationWrapper'>
-                      <Carousel photoAlbum={pictures}/>
+                      <Carousel photoAlbum={good.pictures}/>
                       <div className='accomodationHeader'>
 
                           <div>
-                              <h1 className='accomodationTitle'>{title} </h1>
-                              <p className='accomodationLocation'>{location}</p> 
-                              <Tags tagData={tags} />
+                              <h1 className='accomodationTitle'>{good.title} </h1>
+                              <p className='accomodationLocation'>{good.location}</p> 
+                              <Tags tagData={good.tags} />
                           </div>
 
                           <div className='hostSummary'>
-                              <Host hostData={host} />
-                              <Ratings ratingNumber={rating}/>
+                              <Host hostData={good.host} />
+                              <Ratings ratingNumber={good.rating}/>
                           </div>
                       </div>   
 
                       <div className='accomodationDetails'>
-                          <DropDown dropdownWidth='DropdownAccomPage' dropdownHeight='dropDownListAccomodation' title={'Description'} content={description}/>
-                          <DropDown dropdownWidth='DropdownAccomPage' dropdownHeight='dropDownListAccomodation'  title={'Equipment'} content={equipments}/>
+                          <DropDown dropdownWidth='DropdownAccomPage' dropdownHeight='dropDownListAccomodation' title={'Description'} content={good.description}/>
+                          <DropDown dropdownWidth='DropdownAccomPage' dropdownHeight='dropDownListAccomodation'  title={'Equipment'} content={good.equipments}/>
                       </div>
                     </div>    
                   )}   

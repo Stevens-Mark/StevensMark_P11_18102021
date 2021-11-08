@@ -8,48 +8,22 @@ import '../styles/Home.css'
 
 
 //Home page template
-// Data fetch(), displays Loading... or error page depending on state
-// json must be in public folder for fetch() to work...
+// Displays Loading, error or page depending on state
 
 export default class Home extends Component {
-  constructor(props) {
-    super(props)
-
-    this.state = {
-      error: null,
-      isLoaded: false,
-      datas: [],
-    }
-  }
-
-  getData(url) {
-    fetch(url)
-      .then((response) => response.json())
-      .then(
-        (jsonResponse) => {this.setState({ isLoaded: true, datas: jsonResponse })
-         },
-        (error) => {
-          this.setState({ error })
-        }
-      ) 
-  }
-
-  componentDidMount() {
-    this.getData("../logements.json")
-  }
 
   render() { 
-    const { datas, error, isLoaded } = this.state
-
+ 
     return (
       <main>
-        {error && (
+         {this.props.isError && (
           <Error />
-        )}
-        {!isLoaded ? (      
-        <div className='loading'>  
-          <div>Loading ... </div> 
-        </div> )  :
+        )} 
+        {!this.props.isLoaded ? (      
+            <div className='loading'>  
+              <div>Loading ... </div> 
+            </div>
+          )  :
         (   
         <div className='homeWrapper'>
             <span className='homeBanner'>
@@ -57,7 +31,7 @@ export default class Home extends Component {
               <h1 className='slogan'>Chez vous, partout et ailleurs</h1>    
             </span>  
           <div className='accomodationContainer'>
-              {datas.map((data) => ( 
+              {this.props.kasaGoods.map((data) => ( 
                     <Card key={data.id} id={data.id} title={data.title} cover={data.cover}/> 
               ))}         
           </div>

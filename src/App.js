@@ -10,25 +10,35 @@ import './App.css'
 
 class App extends Component {
 
+  state = {
+    goods :[],
+    isLoaded: false,
+    error: false
+  }
+
+    componentDidMount() {
+      fetch("/logements.json")
+      .then(res=> res.json())
+          .then(datas =>{
+              this.setState({
+                goods: datas,
+                isLoaded : true
+              });
+          },error=>{
+              this.setState({error})
+    })
+}
+
 render()
   {  
     return (
     <Router>
       <Header />   
         <Switch>
-            <Route exact path="/">
-              <Home />
-            </Route>
-            <Route path="/about">
-              <About />
-            </Route>
-            <Route
-              path="/accomodation/:id"
-              render={(props) => <Accomodation  {...props } />}
-            />
-            <Route>
-              <Error />
-            </Route>
+          <Route path="/" exact component={()=> <Home kasaGoods={this.state.goods} isLoaded={this.state.isLoaded} isError={this.state.error}/>}/>
+          <Route path="/about" exact component={About} />
+          <Route path="/accomodation/:id" exact component={(props)=><Accomodation kasaGoods={this.state.goods} isLoaded={this.state.isLoaded} {...props}/>} />
+          <Route component={Error} />
         </Switch> 
       <Footer />
     </Router>  
