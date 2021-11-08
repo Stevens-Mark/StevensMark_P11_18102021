@@ -1,4 +1,5 @@
 import { Component } from 'react'
+import PropTypes from 'prop-types'
 import Carousel from '../components/Carousel'
 import Host from '../components/Host'
 import Tags from '../components/Tags'
@@ -39,13 +40,11 @@ export default class Accomodation extends Component {
           isError : true,
         })
       }
-
   }
 
     render() {
       const { place, isLoaded, isError } = this.state
       
-
       if (!isLoaded) return (  
         <main>   
           <div className='loading'>  
@@ -88,4 +87,10 @@ export default class Accomodation extends Component {
           )
         }
     }
+}
+
+Accomodation.propTypes = {
+  kasaPlaces: PropTypes.array.isRequired,
+  isLoaded: PropTypes.bool.isRequired,
+  isError: PropTypes.bool.isRequired,
 }

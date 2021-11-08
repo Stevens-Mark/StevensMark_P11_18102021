@@ -1,4 +1,5 @@
 import { Component } from "react"
+import PropTypes from 'prop-types'
 import Banner from '../components/Banner'
 import homeBanner from '../assets/homeBanner.jpg'
 import Card from '../components/Card'
@@ -42,5 +43,8 @@ export default class Home extends Component {
   }
 }
 
-
-
+Home.propTypes = {
+  kasaPlaces: PropTypes.array.isRequired,
+  isLoaded: PropTypes.bool.isRequired,
+  isError: PropTypes.bool.isRequired,
+}
