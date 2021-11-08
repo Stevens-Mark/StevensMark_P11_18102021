@@ -13,63 +13,79 @@ import '../styles/Accomodation.css'
 export default class Accomodation extends Component {
 
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
       place: "",
       isLoaded: false,
-    };
+      isError: false,
+    }
   }
 
   componentDidMount() {
-    const idUrl = this.props.match.params.id;
+    const idUrl = this.props.match.params.id
 
-    const placeToShow = this.props.kasaPlaces.find((room) => room.id === idUrl);
+    const placeToShow = this.props.kasaPlaces.find((room) => room.id === idUrl)
 
-    this.setState({
-      place: placeToShow,
-      isLoaded: this.props.isLoaded,
-    });
+    if (placeToShow){
+        this.setState({
+          place: placeToShow,
+          isLoaded: this.props.isLoaded,
+          isError: this.props.Error,
+        })
+      }
+      else {
+        this.setState({
+          isLoaded: this.props.isLoaded,
+          isError : true,
+        })
+      }
+
   }
 
     render() {
-      const { place, isLoaded } = this.state
+      const { place, isLoaded, isError } = this.state
+      
 
-       console.log(place)
-        if (this.props.isError )  
-        return ( <Error />)
-        if (!isLoaded) return <div></div>;
-        // if (this.props.place === undefined) return <Error />;
-            return (
-                <main>
-                   {!isLoaded ? (      
-                  <div className='loading'>  
-                    <div>Loading ... </div> 
-                  </div> )  :
-                  (      
-                    <div className='accomodationWrapper'>
-                      <Carousel photoAlbum={place.pictures}/>
-                      <div className='accomodationHeader'>
+      if (!isLoaded) return (  
+        <main>   
+          <div className='loading'>  
+            <div>Loading ... </div> 
+          </div> 
+        </main> 
+        ) 
+      
+        if (isError) 
+          return <Error />
+        
+        else 
+        {
+          return (
+              <main>
+   
+                  <div className='accomodationWrapper'>
+                    <Carousel photoAlbum={place.pictures}/>
+                    <div className='accomodationHeader'>
 
-                          <div>
-                              <h1 className='accomodationTitle'>{place.title} </h1>
-                              <p className='accomodationLocation'>{place.location}</p> 
-                              <Tags tagData={place.tags} />
-                          </div>
+                        <div>
+                            <h1 className='accomodationTitle'>{place.title} </h1>
+                            <p className='accomodationLocation'>{place.location}</p> 
+                            <Tags tagData={place.tags} />
+                        </div>
 
-                          <div className='hostSummary'>
-                              <Host hostData={place.host} />
-                              <Ratings ratingNumber={place.rating}/>
-                          </div>
-                      </div>   
+                        <div className='hostSummary'>
+                            <Host hostData={place.host} />
+                            <Ratings ratingNumber={place.rating}/>
+                        </div>
+                    </div>   
 
-                      <div className='accomodationDetails'>
-                          <DropDown dropdownWidth='DropdownAccomPage' dropdownHeight='dropDownListAccomodation' title={'Description'} content={place.description}/>
-                          <DropDown dropdownWidth='DropdownAccomPage' dropdownHeight='dropDownListAccomodation'  title={'Equipment'} content={place.equipments}/>
-                      </div>
-                    </div>    
-                  )}   
-                </main>
+                    <div className='accomodationDetails'>
+                        <DropDown dropdownWidth='DropdownAccomPage' dropdownHeight='dropDownListAccomodation' title={'Description'} content={place.description}/>
+                        <DropDown dropdownWidth='DropdownAccomPage' dropdownHeight='dropDownListAccomodation'  title={'Equipment'} content={place.equipments}/>
+                    </div>
+                  </div>    
+                   
+              </main>
           )
+        }
     }
 }
- 
