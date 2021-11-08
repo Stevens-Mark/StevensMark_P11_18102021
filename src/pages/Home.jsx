@@ -31,7 +31,7 @@ export default class Home extends Component {
               <h1 className='slogan'>Chez vous, partout et ailleurs</h1>    
             </span>  
           <div className='accomodationContainer'>
-              {this.props.kasaGoods.map((data) => ( 
+              {this.props.kasaPlaces.map((data) => ( 
                     <Card key={data.id} id={data.id} title={data.title} cover={data.cover}/> 
               ))}         
           </div>

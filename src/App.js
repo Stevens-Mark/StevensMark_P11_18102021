@@ -9,9 +9,9 @@ import Error from './pages/Error'
 import './App.css'
 
 class App extends Component {
-
+// FETCH() data to initialise the app
   state = {
-    goods :[],
+    places :[],
     isLoaded: false,
     error: false
   }
@@ -21,7 +21,7 @@ class App extends Component {
       .then(res=> res.json())
           .then(datas =>{
               this.setState({
-                goods: datas,
+                places: datas,
                 isLoaded : true
               });
           },error=>{
@@ -35,9 +35,9 @@ render()
     <Router>
       <Header />   
         <Switch>
-          <Route path="/" exact component={()=> <Home kasaGoods={this.state.goods} isLoaded={this.state.isLoaded} isError={this.state.error}/>}/>
+          <Route path="/" exact component={()=> <Home kasaPlaces={this.state.places} isLoaded={this.state.isLoaded} isError={this.state.error}/>}/>
           <Route path="/about" exact component={About} />
-          <Route path="/accomodation/:id" exact component={(props)=><Accomodation kasaGoods={this.state.goods} isLoaded={this.state.isLoaded} {...props}/>} />
+          <Route path="/accomodation/:id" exact component={(props)=><Accomodation kasaPlaces={this.state.places} isLoaded={this.state.isLoaded} isError={this.state.error} {...props}/>} />
           <Route component={Error} />
         </Switch> 
       <Footer />

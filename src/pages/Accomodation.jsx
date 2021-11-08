@@ -15,7 +15,7 @@ export default class Accomodation extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      good: "",
+      place: "",
       isLoaded: false,
     };
   }
@@ -23,22 +23,22 @@ export default class Accomodation extends Component {
   componentDidMount() {
     const idUrl = this.props.match.params.id;
 
-    const gd = this.props.kasaGoods.find((g) => g.id === idUrl);
+    const placeToShow = this.props.kasaPlaces.find((room) => room.id === idUrl);
 
     this.setState({
-      good: gd,
+      place: placeToShow,
       isLoaded: this.props.isLoaded,
     });
   }
 
     render() {
-      const { good, isLoaded } = this.state
+      const { place, isLoaded } = this.state
 
-       console.log(good)
-        // if (error)  
-        // return ( <Error />)
+       console.log(place)
+        if (this.props.isError )  
+        return ( <Error />)
         if (!isLoaded) return <div></div>;
-        // if (this.props.good === undefined) return <Error />;
+        // if (this.props.place === undefined) return <Error />;
             return (
                 <main>
                    {!isLoaded ? (      
@@ -47,24 +47,24 @@ export default class Accomodation extends Component {
                   </div> )  :
                   (      
                     <div className='accomodationWrapper'>
-                      <Carousel photoAlbum={good.pictures}/>
+                      <Carousel photoAlbum={place.pictures}/>
                       <div className='accomodationHeader'>
 
                           <div>
-                              <h1 className='accomodationTitle'>{good.title} </h1>
-                              <p className='accomodationLocation'>{good.location}</p> 
-                              <Tags tagData={good.tags} />
+                              <h1 className='accomodationTitle'>{place.title} </h1>
+                              <p className='accomodationLocation'>{place.location}</p> 
+                              <Tags tagData={place.tags} />
                           </div>
 
                           <div className='hostSummary'>
-                              <Host hostData={good.host} />
-                              <Ratings ratingNumber={good.rating}/>
+                              <Host hostData={place.host} />
+                              <Ratings ratingNumber={place.rating}/>
                           </div>
                       </div>   
 
                       <div className='accomodationDetails'>
-                          <DropDown dropdownWidth='DropdownAccomPage' dropdownHeight='dropDownListAccomodation' title={'Description'} content={good.description}/>
-                          <DropDown dropdownWidth='DropdownAccomPage' dropdownHeight='dropDownListAccomodation'  title={'Equipment'} content={good.equipments}/>
+                          <DropDown dropdownWidth='DropdownAccomPage' dropdownHeight='dropDownListAccomodation' title={'Description'} content={place.description}/>
+                          <DropDown dropdownWidth='DropdownAccomPage' dropdownHeight='dropDownListAccomodation'  title={'Equipment'} content={place.equipments}/>
                       </div>
                     </div>    
                   )}   
