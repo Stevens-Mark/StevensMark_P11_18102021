@@ -12,11 +12,13 @@ export default class Header extends Component {
             <Link to="/"><img className="logo" src={logo} alt="logo"></img></Link>
             <nav>
                 <ul>
-                    <li><NavLink className='navlink' exact to="/">Accueil</NavLink></li>
-                    <li><NavLink className='navlink' to="/about">A Propos</NavLink></li>
+                    <li><NavLink className="navlink" exact to="/">Accueil</NavLink></li>
+
+                    <li><NavLink className="navlink" to="/about">A Propos</NavLink></li>
                 </ul>
             </nav>
         </header>
       )
     }
   }
+
