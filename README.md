@@ -1,70 +1,99 @@
-Getting Started with Create React App
+![Kasa](/src/assets/logo/kasa_logo.svg)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# OPENCLASSROOMS PROJECT 11 
 
-## Available Scripts
+## Develop a web application with React and React Router
 
-In the project directory, you can run:
+Kasa has been in the apartment rental business for almost 10 years now. With more than 500 ads posted every day, Kasa is one of the leaders in apartment rentals in France.
 
-### `yarn start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Skills
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- [x] Developing web application routes with React Router
+- [x] Initialize a web application with a framework
+- [x] Creating components with React
 
-### `yarn test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Installation *(English)*
 
-### `yarn build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Prerequisites
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- [NodeJS](https://nodejs.org/en/)  Version 16.13.0 
+- [Yarn](https://yarnpkg.com/) Version 1.22.11
+- [Visual Studio Code](https://code.visualstudio.com/) or another IDE of your choice
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `yarn eject`
+## Dependencies
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- [react] (https://reactjs.org/) Version 17.0.2
+- [react-router-dom] (https://v5.reactrouter.com/web/guides/quick-start) Version 5.2.0
+- [prop-types] (https://www.npmjs.com/package/prop-types) Version 15.7.2
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Installing and running the project
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- Clone the repository onto your computer :
 
-## Learn More
+  `git clone https://github.com/Stevens-Mark/StevensMark_P11_18102021.git`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Inside this repository, install the packages/dependencies :
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+ `yarn`
 
-### Code Splitting
+- Run the Backend Api, which will then listen on port 3000 by default :
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+ `yarn start`
 
-### Analyzing the Bundle Size
+The App runs on http://localhost:3000/
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+# OPENCLASSROOMS PROJET 11
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
+## Développez une application Web avec React et React Router
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Kasa est dans le métier de la location d’appartements entre particuliers depuis près de 10 ans maintenant. Avec plus de 500 annonces postées chaque jour Kasa fait partie des leaders de la location d’appartements entre particuliers en France.
 
-### `yarn build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Skills
+
+- [x] Développer les routes d'une application web avec React Router
+- [x] Initialiser une application web avec un framework
+- [x] Créer des composants avec React
+
+
+# Installation *(français)*
+
+
+## Prérequis
+
+- [NodeJS](https://nodejs.org/en/)  Version 16.13.0 
+- [Yarn](https://yarnpkg.com/) Version 1.22.11
+- [Visual Studio Code](https://code.visualstudio.com/) ou un autre IDE de votre choix
+
+
+## Dépendances
+
+- [react] (https://reactjs.org/) Version 17.0.2
+- [react-router-dom] (https://v5.reactrouter.com/web/guides/quick-start) Version 5.2.0
+- [prop-types] (https://www.npmjs.com/package/prop-types) Version 15.7.2
+
+
+## Installation et exécution du projet
+
+- Clonez le référentiel sur votre ordinateur :
+
+  `git clone https://github.com/Stevens-Mark/StevensMark_P11_18102021.git`
+
+- A l'intérieur de ce dépôt, installez les paquets/dépendances :
+
+ `yarn`
+
+- Lancez l'Api :
+
+ `yarn start`
+
+L'application tourne sur http://localhost:3000/
