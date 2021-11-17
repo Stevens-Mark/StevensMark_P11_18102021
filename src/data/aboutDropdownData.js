@@ -1,4 +1,6 @@
 
+// Data used for the dropdown menus
+
 export const dropDownList = [
 	{
 		"id": "v1",

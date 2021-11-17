@@ -2,10 +2,14 @@ import { Component } from "react"
 import PropTypes from 'prop-types'
 import '../styles/Banner.css'
 
-
-
-// component to display banner at top of Home/About page
-
+/**
+ * Renders banner at top of Home/About page
+ * @function Banner
+ * @extends Component
+ * @param {string} props image: image for the banner
+ * @param {string} props alternate: the alternative text for the image
+ * @returns {JSX}
+ */
 export default class Banner extends Component {
 
   render() { 

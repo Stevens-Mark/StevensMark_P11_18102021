@@ -2,8 +2,12 @@ import { Component } from "react"
 import { Link } from 'react-router-dom'
 import '../styles/Error.css'
 
-
-// Error message component
+/**
+ * Renders Error message  (if necessary)
+ * @function Error
+ * @extends Component
+ * @returns {JSX}
+ */
 export default class Error extends Component {
   render() {
     return (

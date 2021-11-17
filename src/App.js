@@ -8,6 +8,16 @@ import Accomodation from './pages/Accomodation'
 import Error from './pages/Error'
 import './App.css'
 
+
+/**
+ * Manages routes & renders pages
+ * Gets the data for the site & passes it to the components
+ * @function App
+ * @returns {bollean} isError: 
+ * @returns{boolean} isLoaded: 
+ * @returns {array} kasaPlaces: all the accomodation information
+ * @returns {JSX}
+ */
 class App extends Component {
 // FETCH() data to initialise the app
   state = {
@@ -30,6 +40,7 @@ class App extends Component {
 }
 
 render()
+
   {  
     return (
     <Router>

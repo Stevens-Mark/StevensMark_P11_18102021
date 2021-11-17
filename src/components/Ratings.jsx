@@ -4,8 +4,13 @@ import solidStar from '../assets/stars/red_solid_star.svg'
 import clearStar from '../assets/stars/clear_solid_star.svg'
 import '../styles/Ratings.css'
  
-// Host "star" rating
-
+/**
+ * Renders Host "star" rating
+ * @function Ratings
+ * @extends Component
+ * @param {number} props ratingNumber: a number between 1 & 5 for the host's rating
+ * @returns {JSX}
+ */
 export default class Ratings extends Component {
 
     render() { 

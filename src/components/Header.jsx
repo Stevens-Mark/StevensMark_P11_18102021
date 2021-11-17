@@ -3,8 +3,12 @@ import { Link, NavLink } from 'react-router-dom'
 import logo from '../assets/kasa_logo.svg'
 import '../styles/Header.css'
 
-// Header / Nav component displayed on all pages
-
+/**
+ * Renders Header on each page
+ * @function Header
+ * @extends Component
+ * @returns {JSX}
+ */
 export default class Header extends Component {
     render() { 
       return (

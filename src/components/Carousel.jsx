@@ -5,8 +5,13 @@ import nextArrow from '../assets/arrows/white_forward_arrow.svg'
 import '../styles/Carousel.css'
 import Blank from '../assets/blank.jpg'
 
-// Carousel at top of page for accomodation announcement
-
+/**
+ * Renders Carousel at top of page for accomodation announcement
+ * @function Carousel
+ * @extends Component
+ * @param {array} props photoAlbum: pictures for the carousel
+ * @returns {JSX}
+ */
 export default class Carousel extends Component {
   constructor(props) {
     super(props)

@@ -3,7 +3,14 @@ import PropTypes from 'prop-types'
 import '../styles/HostDetails.css'
 import DefaultPicture from '../assets/profile.png'
 
-// Host name & photograph
+/**
+ * Renders Host details in accomodation anouncement
+ * @function Host
+ * @extends Component
+ * @param {string} props hostData.name: hosts name
+ * @param {string} props hostData.picture: hosts photograph
+ * @returns {JSX}
+ */
 export default class Host extends Component {
 
     render() {

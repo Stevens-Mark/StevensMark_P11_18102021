@@ -3,8 +3,15 @@ import { Link} from 'react-router-dom'
 import PropTypes from 'prop-types'
 import '../styles/Card.css'
 
-// Individaul announcement card for each accomodation on Home page
-
+/**
+ * Individual announcement card for each accomodation on Home page
+ * @function Card
+ * @extends Component
+ * @param {string} props id: used for the route
+ * @param {string} props title: title for the accommodation anouncement card
+ * @param {string} props cover: cover photo of the accomodation anouncement card
+ * @returns {JSX}
+ */
 export default class Card extends Component {
 
   render() {

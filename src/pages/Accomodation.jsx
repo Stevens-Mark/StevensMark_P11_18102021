@@ -8,9 +8,17 @@ import Ratings from '../components/Ratings'
 import Error from './Error'
 import '../styles/Accomodation.css'
 
-//Individual accomodation page template
-// Displays Loading, error or page depending on state
-// relevant announcement displayed based on ID extracted from Url params
+/**
+* Individual accomodation page template
+* relevant announcement displayed based on ID extracted from Url params
+* Renders Loading, error or page depending on state
+ * @function Home
+ * @extends Component
+ * @param {bollean} props isError: 
+ * @param {boolean} props isLoaded: 
+ * @param {array} props kasaPlaces: all the accomodation information
+ * @returns {JSX}
+ */
 export default class Accomodation extends Component {
 
   constructor(props) {
@@ -44,7 +52,7 @@ export default class Accomodation extends Component {
 
     render() {
       const { place, isLoaded, isError } = this.state
-      
+
       if (!isLoaded) return (  
         <main>   
           <div className='loading'>  

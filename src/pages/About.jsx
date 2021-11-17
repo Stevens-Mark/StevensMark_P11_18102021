@@ -5,8 +5,14 @@ import { dropDownList} from '../data/aboutDropdownData.js'
 import DropDown from '../components/DropDown'
 import '../styles/About.css'
 
-// About/A propos page
-
+/**
+ * Renders About/A propos page
+ * @function About
+ * @extends Component
+ * @param {string} aboutBanner: image for the banner from file
+ * @param {array} dropDownList: content for dropdown list from file
+ * @returns {JSX}
+ */
 export default class About extends Component {
  
   render() { 

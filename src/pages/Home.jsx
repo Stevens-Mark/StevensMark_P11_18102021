@@ -7,10 +7,16 @@ import Error from "./Error"
 import '../styles/Home.css'
 // key={`${data.id}-${index}`}
 
-
-//Home page template
-// Displays Loading, error or page depending on state
-
+/**
+* Home page template
+* Renders Loading, error or page depending on state
+ * @function Home
+ * @extends Component
+ * @param {bollean} props isError: 
+ * @param {boolean} props isLoaded: 
+ * @param {array} props kasaPlaces: all the accomodation information
+ * @returns {JSX}
+ */
 export default class Home extends Component {
 
   render() { 
