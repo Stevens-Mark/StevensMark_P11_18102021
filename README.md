@@ -1,6 +1,6 @@
-![Kasa](/src/assets/logo/kasa_logo.svg)
+![Kasa](/src/assets/kasa_logo.svg)
 
-# OPENCLASSROOMS PROJECT 11 
+# OPENCLASSROOMS PROJECT 11 *(English)*
 
 ## Develop a web application with React and React Router
 
@@ -50,7 +50,7 @@ The App runs on http://localhost:3000/
 
 
 
-# OPENCLASSROOMS PROJET 11
+# OPENCLASSROOMS PROJET 11 *(Francais)*
 
 
 ## Développez une application Web avec React et React Router
