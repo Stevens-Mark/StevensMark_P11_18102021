@@ -7,6 +7,10 @@
 Kasa has been in the apartment rental business for almost 10 years now. With more than 500 ads posted every day, Kasa is one of the leaders in apartment rentals in France.
 
 
+- [Figma](https://www.figma.com/file/bAnXDNqRKCRRP8mY2gcb5p/UI-Design-Kasa-FR?node-id=4%3A1)
+- You can find more information in the `Kasa Briefs` folder.
+
+
 ## Skills
 
 - [x] Developing web application routes with React Router
@@ -26,9 +30,9 @@ Kasa has been in the apartment rental business for almost 10 years now. With mor
 
 ## Dependencies
 
-- [react] (https://reactjs.org/) Version 17.0.2
-- [react-router-dom] (https://v5.reactrouter.com/web/guides/quick-start) Version 5.2.0
-- [prop-types] (https://www.npmjs.com/package/prop-types) Version 15.7.2
+- [React](https://reactjs.org/) Version 17.0.2
+- [React-router-dom](https://v5.reactrouter.com/web/guides/quick-start) Version 5.2.0
+- [Prop-types](https://www.npmjs.com/package/prop-types) Version 15.7.2
 
 
 ## Installing and running the project
@@ -58,6 +62,10 @@ The App runs on http://localhost:3000/
 Kasa est dans le métier de la location d’appartements entre particuliers depuis près de 10 ans maintenant. Avec plus de 500 annonces postées chaque jour Kasa fait partie des leaders de la location d’appartements entre particuliers en France.
 
 
+- [Figma](https://www.figma.com/file/bAnXDNqRKCRRP8mY2gcb5p/UI-Design-Kasa-FR?node-id=4%3A1)
+- Vous trouverez plus d'informations dans le dossier `Kasa Briefs`.
+
+
 ## Skills
 
 - [x] Développer les routes d'une application web avec React Router
@@ -77,9 +85,9 @@ Kasa est dans le métier de la location d’appartements entre particuliers depu
 
 ## Dépendances
 
-- [react] (https://reactjs.org/) Version 17.0.2
-- [react-router-dom] (https://v5.reactrouter.com/web/guides/quick-start) Version 5.2.0
-- [prop-types] (https://www.npmjs.com/package/prop-types) Version 15.7.2
+- [React](https://reactjs.org/) Version 17.0.2
+- [React-router-dom](https://v5.reactrouter.com/web/guides/quick-start) Version 5.2.0
+- [Prop-types](https://www.npmjs.com/package/prop-types) Version 15.7.2
 
 
 ## Installation et exécution du projet
