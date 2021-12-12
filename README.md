@@ -2,6 +2,10 @@
 
 # OPENCLASSROOMS PROJECT 11 *(English)*
 
+# Kasa
+
+Open website at Git pages: https://stevens-mark.github.io/StevensMark_P11_18102021/
+
 ## Develop a web application with React and React Router
 
 Kasa has been in the apartment rental business for almost 10 years now. With more than 500 ads posted every day, Kasa is one of the leaders in apartment rentals in France.
@@ -90,6 +94,10 @@ The App runs on http://localhost:3000/
 
 
 # OPENCLASSROOMS PROJET 11 *(Francais)*
+
+# Kasa
+
+Ouvrir le site web aux pages Git: https://stevens-mark.github.io/StevensMark_P11_18102021/
 
 ## Développez une application Web avec React et React Router
 
