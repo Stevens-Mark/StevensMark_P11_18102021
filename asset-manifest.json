@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/StevensMark_P11_18102021/static/css/main.7dd58bf4.chunk.css",
+    "main.js": "/StevensMark_P11_18102021/static/js/main.315bf3e5.chunk.js",
+    "main.js.map": "/StevensMark_P11_18102021/static/js/main.315bf3e5.chunk.js.map",
+    "runtime-main.js": "/StevensMark_P11_18102021/static/js/runtime-main.41fa2900.js",
+    "runtime-main.js.map": "/StevensMark_P11_18102021/static/js/runtime-main.41fa2900.js.map",
+    "static/js/2.285c71cc.chunk.js": "/StevensMark_P11_18102021/static/js/2.285c71cc.chunk.js",
+    "static/js/2.285c71cc.chunk.js.map": "/StevensMark_P11_18102021/static/js/2.285c71cc.chunk.js.map",
+    "static/js/3.7a0d5105.chunk.js": "/StevensMark_P11_18102021/static/js/3.7a0d5105.chunk.js",
+    "static/js/3.7a0d5105.chunk.js.map": "/StevensMark_P11_18102021/static/js/3.7a0d5105.chunk.js.map",
+    "index.html": "/StevensMark_P11_18102021/index.html",
+    "static/css/main.7dd58bf4.chunk.css.map": "/StevensMark_P11_18102021/static/css/main.7dd58bf4.chunk.css.map",
+    "static/js/2.285c71cc.chunk.js.LICENSE.txt": "/StevensMark_P11_18102021/static/js/2.285c71cc.chunk.js.LICENSE.txt",
+    "static/media/aboutBanner.bd61ae17.jpg": "/StevensMark_P11_18102021/static/media/aboutBanner.bd61ae17.jpg",
+    "static/media/blank.8f48664c.jpg": "/StevensMark_P11_18102021/static/media/blank.8f48664c.jpg",
+    "static/media/clear_solid_star.39b09519.svg": "/StevensMark_P11_18102021/static/media/clear_solid_star.39b09519.svg",
+    "static/media/down_arrow_white.b052dd29.svg": "/StevensMark_P11_18102021/static/media/down_arrow_white.b052dd29.svg",
+    "static/media/homeBanner.23fd3280.jpg": "/StevensMark_P11_18102021/static/media/homeBanner.23fd3280.jpg",
+    "static/media/kasa_logo.a6101328.svg": "/StevensMark_P11_18102021/static/media/kasa_logo.a6101328.svg",
+    "static/media/kasa_white_logo.ee689fd9.svg": "/StevensMark_P11_18102021/static/media/kasa_white_logo.ee689fd9.svg",
+    "static/media/red_solid_star.a21f8abf.svg": "/StevensMark_P11_18102021/static/media/red_solid_star.a21f8abf.svg",
+    "static/media/up_arrow_white.557045ea.svg": "/StevensMark_P11_18102021/static/media/up_arrow_white.557045ea.svg",
+    "static/media/white_back_arrow.3529f398.svg": "/StevensMark_P11_18102021/static/media/white_back_arrow.3529f398.svg",
+    "static/media/white_forward_arrow.20f8ff01.svg": "/StevensMark_P11_18102021/static/media/white_forward_arrow.20f8ff01.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.41fa2900.js",
+    "static/js/2.285c71cc.chunk.js",
+    "static/css/main.7dd58bf4.chunk.css",
+    "static/js/main.315bf3e5.chunk.js"
+  ]
+}
