@@ -43,7 +43,7 @@ render()
 
   {  
     return (
-    <Router>
+    <Router basename='/StevensMark_P11_18102021/'>
       <Header />   
         <Switch>
           <Route path="/" exact component={()=> <Home kasaPlaces={this.state.places} isLoaded={this.state.isLoaded} isError={this.state.error}/>}/>
