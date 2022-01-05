@@ -84,7 +84,7 @@ The mockups can be found here :
 
  `yarn`
 
-- Run the Backend Api, which will then listen on port 3000 by default :
+- Run the Api:
 
  `yarn start`
 
