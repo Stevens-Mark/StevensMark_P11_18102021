@@ -37,11 +37,6 @@ nav ul {
   text-decoration: underline;
 }
 
-/* .active{
-  text-decoration: underline;
-} */
-
-
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 1240px) {
