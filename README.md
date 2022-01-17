@@ -1,10 +1,12 @@
 ![Kasa](/src/assets/kasa_logo.svg)
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a7b11614-2d8f-4060-b328-d8af733424ca/deploy-status)](https://app.netlify.com/sites/kasa2021/deploys)
+
 # OPENCLASSROOMS PROJECT 11 *(English)*
 
 # Kasa
 
-Open website at Git pages: https://stevens-mark.github.io/StevensMark_P11_18102021/
+Open website at [Kasa-netifly](https://kasa2021.netlify.app/)
 
 ## Develop a web application with React and React Router
 
@@ -97,7 +99,7 @@ The App runs on http://localhost:3000/
 
 # Kasa
 
-Ouvrir le site web aux pages Git: https://stevens-mark.github.io/StevensMark_P11_18102021/
+Ouvrir le site web à [Kasa-netifly](https://kasa2021.netlify.app/)
 
 ## Développez une application Web avec React et React Router
 
