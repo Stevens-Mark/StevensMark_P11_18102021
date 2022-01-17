@@ -6,7 +6,7 @@
 
 # Kasa
 
-Open website at [Kasa-netifly](https://kasa2021.netlify.app/)
+Open website at [Kasa](https://kasa2021.netlify.app/)
 
 ## Develop a web application with React and React Router
 
@@ -99,7 +99,7 @@ The App runs on http://localhost:3000/
 
 # Kasa
 
-Ouvrir le site web à [Kasa-netifly](https://kasa2021.netlify.app/)
+Ouvrir le site web à [Kasa](https://kasa2021.netlify.app/)
 
 ## Développez une application Web avec React et React Router
 
