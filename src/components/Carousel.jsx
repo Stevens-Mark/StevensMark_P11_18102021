@@ -24,7 +24,7 @@ export default class Carousel extends Component {
     const {currentImageIndex} = this.state
     const pictures = this.props.photoAlbum
     const length = pictures?.length
-  
+
     const previousSlide = () => {
         this.setState((prevState) => ({
           currentImageIndex: prevState.currentImageIndex !== 0 ? prevState.currentImageIndex - 1 : prevState.currentImageIndex = length - 1
@@ -39,10 +39,13 @@ export default class Carousel extends Component {
 
     return (   
           <div className='carouselWrapper'>
-            <div className='carouselControls'>
-              <img className='previousControlArrows' src={previousArrow} alt='précédent' onClick={previousSlide} />
-              <img className='nextControlArrows' src={nextArrow} alt='suivant' onClick={nextSlide} />
-            </div>
+            {length !== 1 ? 
+              <div className='carouselControls'>
+                <img className='previousControlArrows' src={previousArrow} alt='précédent' onClick={previousSlide} />
+                <img className='nextControlArrows' src={nextArrow} alt='suivant' onClick={nextSlide} />
+              </div> 
+              : null
+            }
               <img className='carouselImages' src={pictures? pictures[currentImageIndex] : Blank} alt='Carousel Gallery' />
               <p className='counter'>{currentImageIndex+1}/{length || 0 }</p>
           </div>     

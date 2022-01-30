@@ -14,7 +14,6 @@ import '../styles/About.css'
  * @returns {JSX}
  */
 export default class About extends Component {
- 
   render() { 
     return ( 
       <main>

@@ -13,16 +13,15 @@ import '../styles/Card.css'
  * @returns {JSX}
  */
 export default class Card extends Component {
-
   render() {
     const {id, title, cover} = this.props
     return (
-        <article className='accomodationCard'>
-          <Link to={`/accomodation/${id}`}>
-            <img className='coverImage' src={cover} alt='Cover'/>
-            <h2 className='coverTitle'>{title}</h2>
-          </Link> 
-        </article>
+      <article className='accomodationCard'>
+        <Link to={`/accomodation/${id}`}>
+          <img className='coverImage' src={cover} alt='Cover'/>
+          <h2 className='coverTitle'>{title}</h2>
+        </Link> 
+      </article>
     )
   }
 }

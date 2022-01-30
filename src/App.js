@@ -8,7 +8,6 @@ import Accomodation from './pages/Accomodation'
 import Error from './pages/Error'
 import './App.css'
 
-
 /**
  * Manages routes & renders pages
  * Gets the data for the site & passes it to the components
@@ -40,7 +39,6 @@ class App extends Component {
 }
 
 render()
-
   {  
     return (
     <Router>

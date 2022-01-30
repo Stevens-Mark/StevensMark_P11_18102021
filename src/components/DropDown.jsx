@@ -58,13 +58,18 @@ export default class DropDown extends Component {
     return (
         <div className={dropdownWidth} /* ref={this.container} */>
             <div className='dropDownTitleBar' onClick={this.handleButtonClick}>
-                <h2 className='dropDownTitleBarText'>{title}</h2>
-                <span>{open ? (<img className='dropdownArrow' src={upArrow} alt="icon" />) : 
-                    (<img className='dropdownArrow' src={downArrow} alt="icon" />)} </span>
+              <h2 className='dropDownTitleBarText'>{title}</h2>
+              <span>{open ? 
+              (
+              <img className='dropdownArrow' src={upArrow} alt="icon" />
+              ) : ( 
+              <img className='dropdownArrow' src={downArrow} alt="icon" /> )} </span>
             </div>
 
-            {open && (typeof(content) === 'string' ? (
-            <p className={dropdownHeight}>{content}</p>) :  
+            {open && (typeof(content) === 'string' ? 
+            (
+            <p className={dropdownHeight}>{content}</p>
+            ) :  
             ( <ul className={dropdownHeight}>
                 {content.map((equipment, index) => (
                   <li key={`${equipment}-${index}`}>{equipment}</li> ))}

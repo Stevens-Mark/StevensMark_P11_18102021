@@ -11,11 +11,10 @@ import '../styles/Banner.css'
  * @returns {JSX}
  */
 export default class Banner extends Component {
-
   render() { 
     const {image, alternate} = this.props
     return (
-          <img className="banner" src={image} alt={alternate}/>
+      <img className="banner" src={image} alt={alternate}/>
     )
   }
 }

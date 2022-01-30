@@ -17,7 +17,7 @@ Kasa's website was coded more than 10 years ago in ASP.NET with a lot of legacy 
 
 ## Objective
 Start the React project and develop the whole application, the React components, the React Router routes, following the Figma mockups (responsive!) and all the information given.
-Back-end / data : As the recruitment of the person in charge of the Back-End is not finished, there is no backend for the moment. The last 20 housing ads in aJSON file can be used to build the corresponding Front-End.
+Back-end / data : As the recruitment of the person in charge of the Back-End is not finished, there is no backend for the moment. The last 20 housing ads in a JSON file can be used to build the corresponding Front-End.
 
 
 ## Technical constraints
@@ -91,8 +91,6 @@ The mockups can be found here :
  `yarn start`
 
 The App runs on http://localhost:3000/
-
-
 
 
 # OPENCLASSROOMS PROJET 11 *(Francais)*

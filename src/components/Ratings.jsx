@@ -12,20 +12,19 @@ import '../styles/Ratings.css'
  * @returns {JSX}
  */
 export default class Ratings extends Component {
+	render() { 
+		const {ratingNumber} = this.props
+		const range = [1, 2, 3, 4, 5]
 
-    render() { 
-        const {ratingNumber} = this.props
-        const range = [1, 2, 3, 4, 5]
-
-	return (
-		<div className='ratingsWrapper'>
-			{range.map((rangeElem) =>
-				ratingNumber >= rangeElem ? (
-					<img className='star' key={rangeElem.toString()} src={solidStar} alt='' />
-				) : <img className='star' key={rangeElem.toString()} src={clearStar} alt='' />
-			)}
-		</div>
-		)
+		return (
+			<div className='ratingsWrapper'>
+				{range.map((rangeElem) =>
+					ratingNumber >= rangeElem ? (
+						<img className='star' key={rangeElem.toString()} src={solidStar} alt='' />
+					) : <img className='star' key={rangeElem.toString()} src={clearStar} alt='' />
+				)}
+			</div>
+			)
 	}
 }
 

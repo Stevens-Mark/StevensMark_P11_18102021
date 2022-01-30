@@ -12,9 +12,7 @@ import DefaultPicture from '../assets/profile.png'
  * @returns {JSX}
  */
 export default class Host extends Component {
-
-    render() {
-       
+    render() {   
         return (
         <div className='hostWrapper'>
             <h2 className='hostTitle'>{this.props.hostData.name || " "}</h2>
@@ -29,7 +27,7 @@ Host.propTypes = {
     picture: PropTypes.string.isRequired,
   }
 
-  Host.defaultProps = {
+Host.defaultProps = {
     name: '',
     picture: DefaultPicture,
 }

@@ -11,7 +11,6 @@ import '../styles/Tags.css'
  * @returns {JSX}
  */
 export default class Tags extends Component {
-
     render() {
         const {tagData} = this.props
         

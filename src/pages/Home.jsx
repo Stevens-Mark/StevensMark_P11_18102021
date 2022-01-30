@@ -18,10 +18,8 @@ import '../styles/Home.css'
  * @returns {JSX}
  */
 export default class Home extends Component {
-
   render() { 
- 
-    return (
+     return (
       <main>
          {this.props.isError && (
           <Error />
