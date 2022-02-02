@@ -1,7 +1,6 @@
 import { Component } from "react"  /*createRef */
 import PropTypes from 'prop-types'
-import upArrow from '../assets/arrows/up_arrow_white.svg'
-import downArrow from '../assets/arrows/down_arrow_white.svg'
+import arrow from '../assets/arrows/up_arrow_white.svg'
 import '../styles/DropDown.css'
 
 /**
@@ -59,20 +58,20 @@ export default class DropDown extends Component {
         <div className={dropdownWidth} /* ref={this.container} */>
             <div className='dropDownTitleBar' onClick={this.handleButtonClick}>
               <h2 className='dropDownTitleBarText'>{title}</h2>
-              <span>{open ? 
-              (
-              <img className='dropdownArrow' src={upArrow} alt="icon" />
-              ) : ( 
-              <img className='dropdownArrow' src={downArrow} alt="icon" /> )} </span>
+              <span>
+              <img style={{ animation: open ? 'rotate 0.5s forwards ease-in-out' : 'reverseRotate 0.5s both ease-in-out' }} className='dropdownArrow' src={arrow} alt="icon" />
+              </span>
             </div>
 
             {open && (typeof(content) === 'string' ? 
             (
-            <p className={dropdownHeight}>{content}</p>
+              <div className={dropdownHeight}>
+                <p className='contentText'>{content}</p>
+              </div>
             ) :  
             ( <ul className={dropdownHeight}>
                 {content.map((equipment, index) => (
-                  <li key={`${equipment}-${index}`}>{equipment}</li> ))}
+                  <li className='contentText' key={`${equipment}-${index}`}>{equipment}</li> ))}
               </ul>
             ))}                     
         </div>

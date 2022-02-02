@@ -5,7 +5,7 @@ import homeBanner from '../assets/homeBanner.jpg'
 import Card from '../components/Card'
 import Error from "./Error"
 import '../styles/Home.css'
-// key={`${data.id}-${index}`}
+import '../styles/keyframes.css'
 
 /**
 * Home page template

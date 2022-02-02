@@ -4,7 +4,7 @@ import aboutBanner from '../assets/aboutBanner.jpg'
 import { dropDownList} from '../data/aboutDropdownData.js'
 import DropDown from '../components/DropDown'
 import '../styles/About.css'
-
+import '../styles/keyframes.css'
 /**
  * Renders About/A propos page
  * @function About

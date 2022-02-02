@@ -1,6 +1,7 @@
 /* CSS for accomodation pages */
 
 .accomodationWrapper {
+    animation: fadeIn 1s both ease-in-out;
     max-width: 1240px;
     display: flex;
     flex-direction: column;
