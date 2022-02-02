@@ -40,7 +40,6 @@
   } */
 
   .dropDownListAbout {
-    animation: slideIn .6s both ease-in-out;
     background: #F6F6F6;
     border-radius: 5px;
     box-shadow: 0px 7px 12px 3px #d9d9d9;
@@ -49,12 +48,11 @@
     font-weight: 400;
     margin: unset;
     padding: 0.75rem;
-    position: relative;
+    position: absolute;
     z-index: 1;
   }
 
   .dropDownListAccomodation {
-    animation: slideIn .6s both ease-in-out;
     background: #F6F6F6;
     border-radius: 5px;
     box-shadow: 0px 7px 12px 3px #d9d9d9;
@@ -64,7 +62,7 @@
     height: 160px;
     margin: unset;
     padding: 0.75rem;
-    position: relative;
+    position: absolute;
     z-index: 1;
   }
   
@@ -74,11 +72,7 @@
     margin: 0;
   }
 
-  .contentText {
-    animation: slideIn 1s both ease-in-out;
-  }
-
-  /* MEDIA QUERIES */
+   /* MEDIA QUERIES */
 
   @media screen and (min-width: 660px) {
     .dropdownArrow {

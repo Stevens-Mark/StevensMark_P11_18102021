@@ -59,19 +59,19 @@ export default class DropDown extends Component {
             <div className='dropDownTitleBar' onClick={this.handleButtonClick}>
               <h2 className='dropDownTitleBarText'>{title}</h2>
               <span>
-              <img style={{ animation: open ? 'rotate 0.5s forwards ease-in-out' : 'reverseRotate 0.5s both ease-in-out' }} className='dropdownArrow' src={arrow} alt="icon" />
+              <img style={{ animation: open ? 'rotate 0.5s both ease-in-out' : 'reverseRotate 0.5s both ease-in-out' }} className='dropdownArrow' src={arrow} alt="icon" />
               </span>
             </div>
 
-            {open && (typeof(content) === 'string' ? 
+            {(typeof(content) === 'string' ? 
             (
-              <div className={dropdownHeight}>
-                <p className='contentText'>{content}</p>
+              <div style={{ animation: open ? 'slideIn 0.5s both ease-in-out' : 'slideOut 0.5s both ease-in-out' }} className={dropdownHeight}>
+                <p style={{ animation: open ? 'slideIn 1s both ease-in-out' : 'slideOut 1s both ease-in-out' }} >{content}</p>
               </div>
             ) :  
-            ( <ul className={dropdownHeight}>
+            ( <ul style={{ animation: open ? 'slideIn 0.5s both ease-in-out' : 'slideOut 0.5s both ease-in-out' }}  className={dropdownHeight}>
                 {content.map((equipment, index) => (
-                  <li className='contentText' key={`${equipment}-${index}`}>{equipment}</li> ))}
+                  <li style={{ animation: open ? 'slideIn 1s both ease-in-out' : 'slideOut 1s both ease-in-out' }}  key={`${equipment}-${index}`}>{equipment}</li> ))}
               </ul>
             ))}                     
         </div>
