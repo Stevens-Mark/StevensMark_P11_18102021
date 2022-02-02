@@ -65,11 +65,11 @@ export default class DropDown extends Component {
 
             {(typeof(content) === 'string' ? 
             (
-              <div style={{ animation: open ? 'slideIn 0.5s both ease-in-out' : 'slideOut 0.5s both ease-in-out' }} className={dropdownHeight}>
+              <div style={{ animation: open ? 'slideIn 0.5s both ease-in-out' : 'slideOut 1.2s both ease-in-out' }} className={dropdownHeight}>
                 <p style={{ animation: open ? 'slideIn 1s both ease-in-out' : 'slideOut 1s both ease-in-out' }} >{content}</p>
               </div>
             ) :  
-            ( <ul style={{ animation: open ? 'slideIn 0.5s both ease-in-out' : 'slideOut 0.5s both ease-in-out' }}  className={dropdownHeight}>
+            ( <ul style={{ animation: open ? 'slideIn 0.5s both ease-in-out' : 'slideOut 1.2s both ease-in-out' }}  className={dropdownHeight}>
                 {content.map((equipment, index) => (
                   <li style={{ animation: open ? 'slideIn 1s both ease-in-out' : 'slideOut 1s both ease-in-out' }}  key={`${equipment}-${index}`}>{equipment}</li> ))}
               </ul>
