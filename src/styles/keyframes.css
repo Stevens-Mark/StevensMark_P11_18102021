@@ -6,11 +6,11 @@
   @keyframes slideIn {
     0% { opacity: 0; transform: translateY(-100px); }
     60% { opacity: 0; }
-    100%  { opacity: 1; transform: translateY(-5px); position: relative; } 
+    100%  { opacity: 1; transform: translateY(-5px);  } 
   }
   
   @keyframes slideOut {
-    0% { opacity: 1; transform: translateY(-5px); position: relative;}
+    0% { opacity: 1; transform: translateY(-5px); }
     60% { opacity: 0; }
     100%  { opacity: 0; transform: translateY(-100px); } 
   }
