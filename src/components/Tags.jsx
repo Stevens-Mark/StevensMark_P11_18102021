@@ -17,7 +17,7 @@ export default class Tags extends Component {
         return (
             <div className='tagWrapper'>
                 {(tagData || []).map((tag) => ( 
-                    <h3 key={tag} className='tagTitle'>{tag}</h3>
+                    <p key={tag} className='tagTitle'>{tag}</p>
                 ))}  
             </div>
         )
